@@ -1,0 +1,219 @@
+/*MENU VIEW*/
+/*SMOOTH*/
+.smooth,
+.smooth div[class*="popover-content"] > ul[class*="menu"] {
+  box-shadow: var(--shadow2dp);
+  color: var(--color100);
+  background: var(--color0);
+}
+.smooth div[class*="popover"] > div[class*="popover-content"] {
+  box-shadow: none;
+}
+.smooth svg {
+  color: var(--color70);
+}
+.smooth > li:not([class*="menu-divider"]) a {
+  background-color: unset;
+}
+.smooth > li:not([class*="menu-divider"]) a:hover:not([class*="disabled"]) {
+  background-color: var(--white);
+}
+.smooth a[class*="disabled"] > div,
+.smooth a > span[class*="label"],
+.smooth a[class*="disabled"] > span[class*="item-label"],
+.smooth a[class*="disabled"] svg,
+.smooth a > span[class*="label"] > span > svg {
+  color: var(--color40) !important;
+}
+.smooth
+  > li[class*="submenu"]
+  span[class*="popover-wrapper"]
+  > span[class*="popover-open"]
+  > a:not(:hover) {
+  background-color: var(--color5);
+}
+.smooth::-webkit-scrollbar-track {
+  background-color: var(--white);
+  border-radius: 0 0.5rem 0.5rem 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.smooth::-webkit-scrollbar-thumb {
+  background-color: var(--color30);
+  border-radius: 0.5rem;
+  border: 0.3rem solid transparent;
+  background-clip: padding-box;
+}
+.smooth::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color40);
+  cursor: pointer;
+}
+
+/*OUTLINED*/
+.outlined,
+.outlined div[class*="popover-content"] > ul[class*="menu"] {
+  box-shadow: none;
+  color: var(--color100);
+  background: var(--white);
+  border: 0.125rem solid var(--color30);
+}
+.outlined div[class*="popover"] > div[class*="popover-content"] {
+  box-shadow: none;
+}
+.outlined svg {
+  color: var(--color70);
+}
+.outlined > li:not([class*="menu-divider"]) a {
+  background-color: unset;
+}
+.outlined > li:not([class*="menu-divider"]) a:hover:not([class*="disabled"]) {
+  background-color: var(--color5);
+}
+.outlined a[class*="disabled"] > div,
+.outlined a > span[class*="label"],
+.outlined a[class*="disabled"] > span[class*="item-label"],
+.outlined a[class*="disabled"] svg,
+.outlined a > span[class*="label"] > span > svg {
+  color: var(--color50) !important;
+}
+.outlined
+  > li[class*="submenu"]
+  span[class*="popover-wrapper"]
+  > span[class*="popover-open"]
+  > a:not(:hover) {
+  background-color: var(--color5);
+}
+.outlined::-webkit-scrollbar-track {
+  background-color: var(--color0);
+  border-radius: 0 0.5rem 0.5rem 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.outlined::-webkit-scrollbar-thumb {
+  background-color: var(--color40);
+  border-radius: 0.5rem;
+  border: 0.3rem solid transparent;
+  background-clip: padding-box;
+}
+.outlined::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color50);
+  cursor: pointer;
+}
+/*-----*/
+/*RAISED*/
+.raised,
+.raised div[class*="popover-content"] > ul[class*="menu"] {
+  box-shadow: var(--shadow8dp);
+  color: var(--color100);
+  background: var(--white);
+}
+.raised div[class*="popover"] > div[class*="popover-content"] {
+  box-shadow: none;
+}
+.raised svg {
+  color: var(--color70);
+}
+.raised > li:not([class*="menu-divider"]) a {
+  background-color: unset;
+}
+.raised > li:not([class*="menu-divider"]) a:hover:not([class*="disabled"]) {
+  background-color: var(--color5);
+}
+.raised a[class*="disabled"] > div,
+.raised a > span[class*="label"],
+.raised a[class*="disabled"] > span[class*="item-label"],
+.raised a[class*="disabled"] svg,
+.raised a > span[class*="label"] > span > svg {
+  color: var(--color50) !important;
+}
+.raised
+  > li[class*="submenu"]
+  span[class*="popover-wrapper"]
+  > span[class*="popover-open"]
+  > a:not(:hover) {
+  background-color: var(--color5);
+}
+.raised::-webkit-scrollbar-track {
+  background-color: var(--color0);
+  border-radius: 0 0.5rem 0.5rem 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.raised::-webkit-scrollbar-thumb {
+  background-color: var(--color40);
+  border-radius: 0.5rem;
+  border: 0.3rem solid transparent;
+  background-clip: padding-box;
+}
+.raised::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color50);
+  cursor: pointer;
+}
+/*-----*/
+/*FILLED*/
+.filled,
+.filled div[class*="popover-content"] > ul[class*="menu"] {
+  color: var(--white);
+  box-shadow: var(--shadow2dp);
+  background: var(--color70);
+}
+.filled div[class*="popover"] > div[class*="popover-content"] {
+  box-shadow: none;
+}
+.filled svg {
+  color: var(--color30);
+}
+.filled > li[class*="menu-divider"] {
+  background-color: var(--color80);
+}
+.filled > li:not([class*="menu-divider"]) a {
+  background-color: unset;
+}
+.filled > li:not([class*="menu-divider"]) a:hover:not([class*="disabled"]) {
+  background-color: var(--color80);
+}
+.filled a[class*="disabled"] > div,
+.filled a > span[class*="label"],
+.filled a[class*="disabled"] > span[class*="item-label"],
+.filled a > span[class*="label"] > span > svg {
+  color: var(--color30) !important;
+}
+.filled a[class*="disabled"] svg {
+  color: var(--color50) !important;
+}
+.filled
+  > li[class*="submenu"]
+  span[class*="popover-wrapper"]
+  > span[class*="popover-open"]
+  > a:not(:hover) {
+  background-color: var(--color70);
+}
+.filled::-webkit-scrollbar-track {
+  background-color: var(--color80);
+  border-radius: 0 0.5rem 0.5rem 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.filled::-webkit-scrollbar-thumb {
+  background-color: var(--color50);
+  border-radius: 0.5rem;
+  border: 0.3rem solid transparent;
+  background-clip: padding-box;
+}
+.filled::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color60);
+  cursor: pointer;
+}
+/*-----*/
+
+/*SCROLLBAR*/
+.smooth::-webkit-scrollbar,
+.outlined::-webkit-scrollbar,
+.raised::-webkit-scrollbar,
+.filled::-webkit-scrollbar {
+  width: 1rem;
+}

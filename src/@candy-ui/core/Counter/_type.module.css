@@ -1,0 +1,64 @@
+/* COUNTER TYPES*/
+/*--DEFAULT--*/
+.default {
+  width: var(--s28);
+  height: var(--s28);
+  min-width: unset;
+  min-height: unset;
+  border-radius: 99%;
+  padding: 0;
+}
+
+.square {
+  composes: default;
+  border-radius: var(--s4);
+}
+
+.dense {
+  min-width: unset;
+  min-height: unset;
+  width: var(--s20);
+  height: var(--s20);
+}
+
+.horizontal {
+  display: inline-flex;
+}
+.vertical {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+}
+.value {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--color100);
+  font-family: var(--font_family_button);
+  font-weight: bold;
+  letter-spacing: var(--letter_spacing_button);
+  font-size: var(--font_size_button);
+  text-align: center;
+  min-width: 2.2rem;
+  transition: min-width 0.3s;
+}
+.verticalValue {
+  padding-left: 0.1rem;
+  padding-right: 0;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+.denseValue {
+  font-size: var(--font_size_caption);
+  letter-spacing: var(--letter_spacing_caption);
+  min-width: 1.8rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.denseValue.verticalValue {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}

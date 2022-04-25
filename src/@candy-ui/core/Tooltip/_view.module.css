@@ -1,0 +1,19 @@
+/*TOOLTIP*/
+
+.filled div[class*="popover-content"] {
+  background: var(--color70);
+  color: var(--white);
+}
+
+.filled div[class*="popover-arrow"] > svg > path:last-of-type {
+  fill: var(--color70);
+}
+.filled div[class*="popover-arrow"] > svg > path:first-of-type {
+  fill-opacity: 0;
+  fill: none;
+}
+
+.filled {
+  box-shadow: var(--shadow8dp);
+  /*mix-blend-mode: multiply;*/
+}

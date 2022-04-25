@@ -1,0 +1,271 @@
+/*INPUT*/
+
+/*SMOOTH*/
+.smooth[class*="input-group"] input[class*="input"],
+.smooth.active[class*="input-group"] input[class*="input"],
+.smooth.active.isFilled[class*="input-group"] input[class*="input"],
+.smooth.active.success[class*="input-group"] input[class*="input"],
+.smooth.active.error-helper-text[class*="input-group"] input[class*="input"] {
+  box-shadow: none;
+  background: var(--color5);
+  color: var(--color100);
+  border: none;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.smooth[class*="input-group"] input[class*="input"]:hover,
+.smooth[class*="input-group"].isFilled input[class*="input"]:hover {
+  color: var(--color100);
+  background: var(--color10);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.smooth[class*="input-group"] input[class*="input"]::placeholder {
+  color: var(--color40);
+  opacity: 1;
+  visibility: visible;
+  display: initial;
+}
+.smooth.active.success[class*="input-group"] input[class*="input"],
+.smooth.active.error-helper-text[class*="input-group"] input[class*="input"] {
+  background: var(--color5);
+}
+.smooth.active.success[class*="input-group"] input[class*="input"]:focus,
+.smooth.active.error-helper-text[class*="input-group"] input[class*="input"]:focus  {
+  background: var(--color10);
+}
+.smooth[class*="input-group"] label {
+  opacity: 1;
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+}
+.smooth[class*="input-group"].active.isFilled label,
+.smooth[class*="input-group"].active label {
+  color: var(--color70);
+  opacity: 1;
+}
+.smooth[class*="input-group"] input[class*="input"]:focus {
+  box-shadow: none;
+}
+/**END SMOOTH*/
+
+/*OUTLINED*/
+.outlined[class*="input-group"] input[class*="input"],
+.outlined.active[class*="input-group"] input[class*="input"],
+.outlined.active.isFilled[class*="input-group"] input[class*="input"],
+.outlined.active.success[class*="input-group"] input[class*="input"],
+.outlined.active.error-helper-text[class*="input-group"] input[class*="input"] {
+  box-shadow: 0 0 0 1px var(--color30) !important;
+  background: var(--white) !important;
+  color: var(--color100) !important;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.outlined[class*="input-group"] input[class*="input"]:hover,
+.outlined[class*="input-group"].isFilled input[class*="input"]:hover  {
+  color: var(--color100) !important;
+  box-shadow: 0 0 0 1px var(--color70) !important;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.outlined[class*="input-group"].active input[class*="input"],
+.outlined.active.success[class*="input-group"] input[class*="input"]:focus,
+.outlined.active.error-helper-text[class*="input-group"] input[class*="input"]:focus  {
+  box-shadow: 0 0 0 2px var(--color70) !important;
+}
+.outlined[class*="input-group"] input[class*="input"]::placeholder {
+  color: var(--color40) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: initial !important;
+}
+.outlined[class*="input-group"] label {
+  opacity: 1 !important;
+  color: var(--color70) !important;
+  font-weight: var(--font_weight_label) !important;
+}
+.outlined[class*="input-group"].active.isFilled label,
+.outlined[class*="input-group"].active label {
+  color: var(--color70) !important;
+  font-weight: var(--font_weight_label) !important;
+  opacity: 1 !important;
+}
+/**END OUTLINED*/
+
+/*RAISED*/
+.raised[class*="input-group"] input[class*="input"],
+.raised.active[class*="input-group"] input[class*="input"],
+.raised.active.success[class*="input-group"] input[class*="input"],
+.raised.active.error-helper-text[class*="input-group"] input[class*="input"],
+.raised.active.isFilled[class*="input-group"] input[class*="input"] {
+  box-shadow: var(--shadow2dp);
+  background: var(--white);
+  color: var(--color100);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.raised[class*="input-group"] input[class*="input"]:hover,
+/*.raised[class*="input-group"].success input[class*="input"]:hover,
+.raised[class*="input-group"].error-helper-text input[class*="input"]:hover,*/
+.raised[class*="input-group"].isFilled input[class*="input"]:hover {
+  color: var(--color100);
+  box-shadow: var(--shadow4dp);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.raised[class*="input-group"].active input[class*="input"] {
+  box-shadow: var(--shadow8dp);
+}
+.raised.active.success[class*="input-group"] input[class*="input"],
+.raised.active.error-helper-text[class*="input-group"] input[class*="input"] {
+  box-shadow: var(--shadow2dp);
+}
+.raised.active.success[class*="input-group"] input[class*="input"]:hover,
+.raised.active.error-helper-text[class*="input-group"] input[class*="input"]:hover {
+  box-shadow: var(--shadow4dp);
+}
+.raised.active.success[class*="input-group"] input[class*="input"]:focus,
+.raised.active.error-helper-text[class*="input-group"] input[class*="input"]:focus  {
+  box-shadow: var(--shadow8dp);
+}
+.raised[class*="input-group"] input[class*="input"]::placeholder {
+  color: var(--color40);
+  opacity: 1;
+  visibility: visible;
+  display: initial;
+}
+.raised[class*="input-group"] input[class*="input"]:hover::placeholder {
+  color: var(--color60);
+}
+.raised[class*="input-group"] label {
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+  opacity: 1;
+}
+.raised[class*="input-group"].active.isFilled label,
+.raised[class*="input-group"].active label {
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+  opacity: 1;
+}
+/**END RAISED*/
+
+/*FILLED*/
+.filled[class*="input-group"] input[class*="input"],
+.filled.active[class*="input-group"] input[class*="input"],
+.filled.active.isFilled[class*="input-group"] input[class*="input"] {
+  box-shadow: none;
+  background: var(--color50);
+  color: var(--color0);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filled svg {
+  fill: var(--color0) !important;
+}
+.filled[class*="input-group"] input[class*="input"]:hover,
+.filled[class*="input-group"].isFilled input[class*="input"]:hover {
+  color: var(--color0);
+  box-shadow: none;
+  background: var(--color60);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filled[class*="input-group"].active input[class*="input"] {
+  box-shadow: none;
+  background: var(--color70);
+}
+.filled.active.success[class*="input-group"] input[class*="input"],
+.filled.active.error-helper-text[class*="input-group"] input[class*="input"] {
+  background: var(--color50);
+}
+.filled.active.success[class*="input-group"] input[class*="input"]:hover,
+.filled.active.error-helper-text[class*="input-group"] input[class*="input"]:hover {
+  background: var(--color60);
+}
+.filled.active.success[class*="input-group"] input[class*="input"]:focus,
+.filled.active.error-helper-text[class*="input-group"] input[class*="input"]:focus  {
+  background: var(--color70);
+}
+.filled[class*="input-group"] input[class*="input"]::placeholder {
+  color: var(--color20);
+  opacity: 1;
+  visibility: visible;
+  display: initial;
+}
+.filled[class*="input-group"] label {
+  opacity: 1;
+  font-weight: var(--font_weight_label);
+}
+.filled[class*="input-group"].active.isFilled label,
+.filled[class*="input-group"].active label {
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+  opacity: 1;
+}
+/**END FILLED*/
+
+/*HELPER TEXT*/
+.error-helper-text {
+  color: var(--red70);
+}
+/*end*/
+
+/*RIGHT ICON*/
+.error-helper-text span[class*="input-action"] {
+  color: var(--color60);
+}
+.filled.error-helper-text span[class*="input-action"] {
+  color: var(--color0);
+}
+.success span[class*="input-action"] {
+  color: var(--color60);
+}
+.filled.success span[class*="input-action"] {
+  color: var(--color0);
+}
+/*-----*/
+/*CLEAR BUTTON*/
+.clearButton[class*="input-group"]
+  > input
+  + span[class*="input-action"]
+  > button {
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+.clearButton[class*="input-group"].isFilled
+  span[class*="input-action"]
+  > button,
+.clearButton[class*="input-group"].active span[class*="input-action"] > button {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clearButton[class*="input-group"].active
+  span[class*="input-action"]
+  > button[class*="button"],
+.clearButton[class*="input-group"].active
+  span[class*="input-action"]
+  > button[class*="button"]
+  > span[class*="icon"] {
+  color: var(--color50) !important;
+  opacity: 1;
+  visibility: visible;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filled.clearButton[class*="input-group"]:hover
+  span[class*="input-action"]
+  > button[class*="button"]
+  > span[class*="icon"] {
+  color: var(--color5) !important;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clearButton[class*="input-group"].active.isFilled
+  span[class*="input-action"]
+  > button {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clearButton[class*="input-group"].active.isFilled:hover
+  span[class*="input-action"]
+  > button {
+  visibility: visible;
+  opacity: 1;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*END CLEAR BUTTON*/

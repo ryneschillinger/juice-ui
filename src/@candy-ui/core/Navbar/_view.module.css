@@ -1,0 +1,23 @@
+/*NAVBAR*/
+.flat {
+  box-shadow: none;
+  background: var(--white);
+}
+.smooth {
+  box-shadow: none;
+  background: var(--color5);
+}
+.raised {
+  box-shadow: var(--shadow2dp);
+  background: var(--white);
+}
+.filled {
+  box-shadow: var(--shadow2dp);
+  background: var(--color70);
+}
+.filled button.view_flat {
+  color: white !important;
+}
+a:hover {
+  text-decoration: none;
+}

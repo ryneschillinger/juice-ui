@@ -1,0 +1,129 @@
+/**TIME PICKER*/
+
+/* Default */
+.def div[class*="timepicker-input-row"] {
+  height: auto;
+  border-radius: 0.25rem;
+  line-height: unset;
+  padding: 0;
+}
+
+.def input[class*="timepicker-input"] {
+  width: 3rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  line-height: unset;
+  letter-spacing: 0.0275rem;
+}
+
+.def span[class*="timepicker-divider-text"] {
+  width: 0.5rem;
+}
+/*Arrow Button*/
+.def span[class*="timepicker-arrow-button"] {
+  width: 2.5rem;
+}
+.def span[class*="timepicker-arrow-button"][class*="hour"] {
+  margin-left: 0.2rem;
+}
+.def span[class*="timepicker-arrow-button"][class*="minute"],
+.def span[class*="timepicker-arrow-button"][class*="second"],
+.def span[class*="timepicker-arrow-button"][class*="millisecond"] {
+  margin-left: 1rem;
+}
+.def div[class*="timepicker-arrow-row"] svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Dense */
+.dense div[class*="timepicker-input-row"] {
+  height: auto;
+  border-radius: 0.25rem;
+  line-height: unset;
+  padding: 0;
+}
+
+.dense input[class*="timepicker-input"] {
+  height: 1.75rem;
+  width: 2.3rem;
+  border-radius: 0.25rem;
+  line-height: unset;
+  letter-spacing: 0.0275rem;
+}
+
+.dense span[class*="timepicker-divider-text"] {
+  width: 0.5rem;
+}
+/*Arrow Button*/
+.dense span[class*="timepicker-arrow-button"] {
+  width: 2.2rem;
+  height: 1.2rem;
+  padding: 0;
+}
+.dense span[class*="timepicker-arrow-button"][class*="hour"] {
+  margin-left: 0;
+}
+.dense span[class*="timepicker-arrow-button"][class*="minute"],
+.dense span[class*="timepicker-arrow-button"][class*="second"],
+.dense span[class*="timepicker-arrow-button"][class*="millisecond"] {
+  margin-left: 0.6rem;
+}
+.dense div[class*="timepicker-arrow-row"] svg {
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(-0.1rem);
+}
+
+/*AM/PM*/
+
+/* Default */
+.def div[class*="ampm-select"] {
+  margin-left: 0.5rem;
+}
+.def div[class*="ampm-select"] > select {
+  height: 2.5rem;
+  line-height: unset;
+  border-radius: 0.25rem;
+  padding: 0 1rem;
+  letter-spacing: 0.0275rem;
+  font-size: inherit;
+  font-family: inherit;
+}
+.def div[class*="ampm-select"] > span[class*="icon"] {
+  position: relative;
+  top: 0.125rem;
+  right: unset;
+  left: -36px;
+  padding-right: 16px;
+}
+.def div[class*="ampm-select"] > span[class*="icon"] > svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+/* Dense */
+.dense div[class*="ampm-select"] {
+  margin-left: 0.3rem;
+}
+.dense div[class*="ampm-select"] > select {
+  height: 1.75rem;
+  line-height: unset;
+  border-radius: 0.25rem;
+  padding: 0 1.6rem 0 0.5rem;
+  letter-spacing: 0.0275rem;
+  font-size: inherit;
+  font-family: inherit;
+  width: auto;
+}
+.dense div[class*="ampm-select"] > span[class*="icon"] {
+  position: relative;
+  top: -1px;
+  right: unset;
+  left: -1.4rem;
+  padding-right: 1.6rem;
+}
+.dense div[class*="ampm-select"] > span[class*="icon"] > svg {
+  width: 1rem;
+  height: 1rem;
+}
+/**/

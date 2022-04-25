@@ -1,0 +1,31 @@
+/*NOTE*/
+.smooth.note,
+.outlined.note,
+.raised.note {
+  color: var(--color80);
+}
+.filled.note {
+  color: var(--color20);
+}
+
+/*ACTIVE HIGHLIGHT*/
+.smooth.active {
+  background: var(--color10) !important;
+}
+.smooth.active:hover {
+  background: var(--color5) !important;
+}
+.outlined.active,
+.raised.active {
+  background: var(--color10) !important;
+}
+.outlined.active:hover,
+.raised.active:hover {
+  background: var(--color20) !important;
+}
+.filled.active {
+  background: var(--color80) !important;
+}
+.filled.active:hover {
+  background: var(--color90) !important;
+}

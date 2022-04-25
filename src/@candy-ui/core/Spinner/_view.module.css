@@ -1,0 +1,17 @@
+/*SMOOTH STYLE*/
+.smooth svg > path[class*="spinner-track"] {
+  stroke: var(--color0);
+}
+.smooth svg > path[class*="spinner-head"] {
+  stroke: var(--color20);
+}
+/*END STYLE*/
+
+/*FILLED STYLE*/
+.filled svg > path[class*="spinner-track"] {
+  stroke: var(--color20);
+}
+.filled svg > path[class*="spinner-head"] {
+  stroke: var(--color80);
+}
+/*END STYLE*/
