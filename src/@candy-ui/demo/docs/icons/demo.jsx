@@ -27,12 +27,12 @@ const DemoIcons = props => {
         <Typo type="h3">Icons</Typo>
 
         <Typo large className={styles.text}>
-          Sweet UI provides over 300 vector UI icons in two sizes (16px and 20px)
+          Candy UI provides over 300 vector UI icons in two sizes (16px and 20px)
           and two formats (SVG and fonts). It's easy to change their color or
           apply effects like text shadows via standard SVG or CSS properties.
         </Typo>
         <Typo large className={styles.text}>
-          Many Sweet UI components support an icon prop which accepts an icon
+          Many Candy UI components support an icon prop which accepts an icon
           name (such as "history") or a JSX element to use as the icon. For
           example: {<pre>{`<Icon icon="add" iconSize={24} />`}</pre>}
         </Typo>
