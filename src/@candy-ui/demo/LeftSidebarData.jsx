@@ -4,6 +4,7 @@ export const Data = [
     hasCaret: true,
     isExpanded: true,
     label: "Getting Started",
+    icon: "airplane",
     childNodes: [
       {
         id: 51,
@@ -75,7 +76,7 @@ export const Data = [
       },
       {
         id: 17,
-        label: "CheckBox",
+        label: "Checkbox",
         link: "/components/checkbox"
       },
       {
@@ -224,7 +225,7 @@ export const Data = [
     id: 57,
     hasCaret: true,
     isExpanded: true,
-    label: "Patterns",
+    label: "UX Patterns",
     childNodes: [
       {
         id: 58,

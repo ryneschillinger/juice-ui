@@ -94,16 +94,16 @@ const DemoStart = props => {
                 />
                 .
               </PatternListItem>
-              <PatternListItem title="Would a check box be a better choice?">
+              <PatternListItem title="Would a checkbox be a better choice?">
                 If there are only two options, you could use a single 
                 <PatternLink
                   url="/components/checkbox"
-                  text="check box"
+                  text="checkbox"
                 />
-                instead. However, check boxes are suitable only for turning a single option on or off, whereas radio buttons can be used for completely different alternatives. If both solutions are possible:
+                instead. However, checkboxes are suitable only for turning a single option on or off, whereas radio buttons can be used for completely different alternatives. If both solutions are possible:
                 <ul className={styles.nestedList}>
                   <li>
-                    Use radio buttons if the meaning of the cleared check box isn't immediately obvious.
+                    Use radio buttons if the meaning of the cleared checkbox isn't immediately obvious.
                     <div style={{ margin: "1rem 0 0.5rem 0" }}>
                       <Icon icon="cross" iconSize={20} color="var(--red50)" />
                       <strong> Incorrect:</strong>
@@ -144,10 +144,10 @@ const DemoStart = props => {
                     </Typo>
                   </li>
                   <li>
-                    Use radio buttons on wizard pages to make the alternatives clear, even if a check box is otherwise acceptable.
+                    Use radio buttons on wizard pages to make the alternatives clear, even if a checkbox is otherwise acceptable.
                   </li>
                   <li>
-                    Use radio buttons if you have enough screen space and the options are important enough to be a good use of that screen space. Otherwise, use a check box or drop-down list.
+                    Use radio buttons if you have enough screen space and the options are important enough to be a good use of that screen space. Otherwise, use a checkbox or drop-down list.
                     <div style={{ margin: "1rem 0 0.5rem 0" }}>
                       <Icon icon="cross" iconSize={20} color="var(--red50)" />
                       <strong> Incorrect:</strong>
@@ -187,11 +187,11 @@ const DemoStart = props => {
                       />
                     </div>
                     <Typo className={styles.patternExampleCaption}>
-                      In this example, a check box is an efficient use of screen space for this peripheral option.
+                      In this example, a checkbox is an efficient use of screen space for this peripheral option.
                     </Typo>
                   </li>
                   <li>
-                    Use a check box if there other check boxes on the page.
+                    Use a checkbox if there other checkboxes on the page.
                   </li>
                 </ul>
               </PatternListItem>
@@ -245,7 +245,7 @@ const DemoStart = props => {
                 <p>When users type or paste anything into the box, select the corresponding option automatically. Doing so simplifies the interaction.</p>
                 <p>In this example, entering a page number automatically selects Pages.</p>
               </PatternListItem>
-              <PatternListItem title="Avoid nesting radio buttons with other radio buttons or check boxes.">
+              <PatternListItem title="Avoid nesting radio buttons with other radio buttons or checkboxes.">
                 <p>If possible, keep all the options at the same level.</p>
                 <div style={{ margin: "1rem 0 0.5rem 0" }}>
                   <Icon icon="tick" iconSize={20} color="var(--green50)" />
@@ -264,14 +264,14 @@ const DemoStart = props => {
                       type="def"
                       color="primary"
                       value="lin"
-                      checked={true}
+                      checked={false}
                       label="Always open pop-ups in a new window"
                     />
                     <Radio
                       type="def"
                       color="primary"
                       value="and"
-                      checked={false}
+                      checked={true}
                       label="Always open pop-ups in a new tab"
                     />
                   </RadioGroup>
@@ -311,7 +311,7 @@ const DemoStart = props => {
                         type="def"
                         color="primary"
                         value="and"
-                        checked={false}
+                        checked={true}
                         label="In a new tab"
                       />
                     </div>
@@ -322,7 +322,7 @@ const DemoStart = props => {
                 </Typo>
               </PatternListItem>
               <PatternListItem>
-                If you do nest radio buttons with other radio buttons or check boxes, <strong>disable these subordinate controls until the high-level option is selected</strong>. Doing so avoids confusion about the meaning of the subordinate controls.
+                If you do nest radio buttons with other radio buttons or checkboxes, <strong>disable these subordinate controls until the high-level option is selected</strong>. Doing so avoids confusion about the meaning of the subordinate controls.
               </PatternListItem>
             </ul>
           </Typo>
@@ -394,7 +394,7 @@ const DemoStart = props => {
                           color="primary"
                           value="later"
                           checked={true}
-                          label="Now"
+                          label="Apply later"
                         />
                         <Radio
                           type="def"
