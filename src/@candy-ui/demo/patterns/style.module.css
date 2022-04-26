@@ -76,3 +76,42 @@
 .listItem {
   margin-top: 1rem;
 }
+
+.patternExample {
+  height: auto;
+  display: block;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: 1px solid var(--blue10);
+}
+
+.patternExampleCorrect {
+  height: auto;
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: 1px solid var(--green50);
+}
+
+.patternExampleIncorrect {
+  height: auto;
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: 1px solid var(--red50);
+}
+
+.patternExampleCaption {
+  margin: -0.5rem 0 1.25rem 0;
+  font-size: var(--font_size_caption);
+}
+
+.nestedList li {
+  margin-top: 1rem;
+}

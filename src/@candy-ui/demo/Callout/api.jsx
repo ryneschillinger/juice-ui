@@ -81,7 +81,7 @@ export const API = props => {
   <span class="attr">view</span>="<span class="val">${view}</span>"
   <span class="attr">color</span>="<span class="val">${color}</span>"
   ${isIcon ? `<span class="attr">icon</span>="<span class="val">info-sign</span>"` : ''}
-  ${isTitle ? `<span class="attr">title</span>="<span class="val">Visually important content</span>` : ''}
+  ${isTitle ? `<span class="attr">title</span>="<span class="val">Visually important content</span>"` : ''}
   ${isCustomWidth ? `<span class="attr">style</span>={{ <span class="attr">maxWidth</span>: <span class="val">"450px"</span> }}` : ''}
 &gt; 
   The component is a simple wrapper around the CSS API that provides props

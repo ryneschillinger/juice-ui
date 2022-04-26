@@ -16,36 +16,6 @@
   box-shadow: var(--shadow2dp);
 }
 
-.pattern-example {
-  height: auto;
-  display: block;
-  padding: 1rem;
-  margin: 1rem 0;
-  background-color: white;
-  border-radius: 0.3rem;
-  border: 1px solid var(--blue10);
-}
-
-.pattern-example-correct {
-  height: auto;
-  display: block;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: white;
-  border-radius: 0.3rem;
-  border: 1px solid var(--green50);
-}
-
-.pattern-example-incorrect {
-  height: auto;
-  display: block;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: white;
-  border-radius: 0.3rem;
-  border: 1px solid var(--red50);
-}
-
 .demo-name {
   font-family: var(--inter);
   margin-bottom: 0.5rem;
