@@ -2,6 +2,8 @@
 
 Juice is unlike any other React UI kit. It takes the [BlueprintJS Library](https://blueprintjs.com/) and [Figma design assets]([https://blueprintjs.com/](https://www.figma.com/file/4UyBcwhG5eXHDbxrbF7CRm/Juice-UI-Kit?node-id=3737%3A47)) and blends them together into a refreshing UI library that helps you build and scale a variety of tasty apps faster than ever before.
 
+The library provides **flat**, **filled**, **smooth**, **outlined**, and **raised** instances for every component, UI widget or template. Want to go simple and data-first for enterprise applications? Try the flat style. Are you a fan of Material UI? The raised style might be the flavor for you. You can even mix-and-match if you'd like! Whatever you're in the mood for, Juice has you covered by making it easier than ever to swap between React and Figma on the fly.
+
 
 # Getting Started
 
