@@ -134,4 +134,4 @@ export const SELECT_MULTI = "/components/select-multi";
 export const PATTERNS_RADIO = "/patterns/radio";
 // OTHER
 export const FIGMA_DEMO_LINK =
-  "https://www.figma.com/file/4UyBcwhG5eXHDbxrbF7CRm/Juicy-UI-Kit-1.0.0?t=IUjKC58RaxfMllJI-1";
+  "https://www.figma.com/file/4UyBcwhG5eXHDbxrbF7CRm/Juice-UI-Kit?node-id=3737%3A47";

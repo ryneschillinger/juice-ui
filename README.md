@@ -1,10 +1,16 @@
-#Installation for Figma
+
+
+
+
+# Installation for Figma
 Extract .fig file and drag'n'drop it onto Figma drafts dashboard.
 Components library used to import within 1 munite.
 
-#Installation for React
+# Installation for React
 Juice UI Design System is available as an zip archive.
 To install unzip archive, copy all files from folder "JuiceUIKit" to your project folder and install package.json dependencies:
+
+
 
 `npm install`
 
