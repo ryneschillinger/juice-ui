@@ -1,0 +1,532 @@
+/*POPOVER*/
+.select-popover {
+  box-shadow: none;
+  width: 100%;
+}
+.select-popover,
+.select-popover > div {
+  border-radius: var(--s12);
+}
+.select-popover ul {
+  border-radius: var(--s12);
+}
+.select-popover-filterable ul {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.popover[class*="minimal"] {
+  box-shadow: none;
+  margin-top: 10px;
+  background: transparent;
+}
+.popover > div[class*="popover-content"] {
+  background: transparent;
+}
+/*BUTTON*/
+.select-button span:not([class*="icon"]) {
+  font-size: var(--font_size_body);
+  font-weight: var(--font_weight_body);
+  color: var(--color100);
+}
+.select-button.placeholder-text span:not([class*="icon"]) {
+  font-size: var(--font_size_body);
+  font-weight: var(--font_weight_body);
+  color: var(--color40);
+}
+.select-button span[class*="icon"],
+.select-button:hover span[class*="icon"] {
+  color: var(--color70);
+}
+.select-button[class*="filled"] span:not([class*="icon"]) {
+  color: var(--white);
+}
+.select-button[class*="filled"].placeholder-text span:not([class*="icon"]) {
+  color: var(--color30);
+}
+.select-button[class*="filled"] span[class*="icon"],
+.select-button[class*="filled"]:hover span[class*="icon"] {
+  color: var(--color20);
+}
+.button-fill-width span[class*="caret-down"] {
+  margin-left: auto;
+}
+.button-center-align {
+  display: flex;
+  justify-content: center;
+}
+.button-center-align span[class*="caret-down"]  {
+  margin-left: 0;
+}
+/*CARET-DOWN*/
+.outlined::after,
+.raised::after,
+.smooth::after {
+  color: var(--color40);
+}
+.outlined:hover::after,
+.raised:hover::after,
+.smooth:hover::after {
+  color: var(--color60);
+}
+.outlined:active::after,
+.outlined:focus::after,
+.raised:active::after,
+.raised:focus::after,
+.smooth:active::after,
+.smooth:focus::after {
+  color: var(--color90);
+}
+.filled::after {
+  color: var(--color10);
+}
+.filled:hover::after {
+  color: var(--color5);
+}
+.filled:active::after,
+.filled:focus::after {
+  color: var(--color0);
+}
+/*SEARCH INPUT*/
+.select-popover input {
+  border-radius: calc(var(--s12)*0.8) calc(var(--s12)*0.8) 0 0;
+}
+.select-popover-dense input {
+  border-radius: calc(var(--s8)*0.8) calc(var(--s8)*0.8) 0 0;
+}
+.outlined[class*="tag-input"] input,
+.smooth[class*="tag-input"] input,
+.raised[class*="tag-input"] input,
+.filled[class*="tag-input"] input {
+  min-width: 10rem;
+}
+
+/*OUTLINED INPUT*/
+.outlined {
+  border: none;
+  color: var(--color100);
+  background: var(--white);
+  box-shadow: 0 0 0 1px var(--color30);
+}
+.outlined:hover {
+  box-shadow: 0 0 0 1px var(--color80);
+}
+.outlined:active,
+.outlined:focus {
+  box-shadow: 0 0 0 2px var(--color80);
+}
+.outlined[class*="tag-input"],
+.outlined.active[class*="tag-input"],
+.outlined.active.isFilled[class*="tag-input"],
+.outlined.active.success[class*="tag-input"],
+.outlined.active.error-helper-text[class*="tag-input"] {
+  box-shadow: 0 0 0 1px var(--color30);
+  background: var(--white);
+  color: var(--color100);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.outlined[class*="tag-input"]:hover,
+.outlined[class*="tag-input"].isFilled:hover  {
+  color: var(--color100);
+  box-shadow: 0 0 0 1px var(--color70);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.outlined[class*="tag-input"].active,
+.outlined.active.success[class*="tag-input"]:focus,
+.outlined.active.error-helper-text[class*="tag-input"]:focus  {
+  box-shadow: 0 0 0 2px var(--color70);
+}
+.outlined[class*="tag-input"] input::placeholder {
+  color: var(--color40);
+  opacity: 1;
+  visibility: visible;
+  display: initial;
+}
+.outlined[class*="tag-input"] label {
+  opacity: 1;
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+}
+.outlined[class*="tag-input"].active.isFilled label,
+.outlined[class*="tag-input"].active label {
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+  opacity: 1;
+}
+.outlined[class*="tag-input"].active.isFilled label,
+.outlined[class*="tag-input"].active label {
+  color: var(--white);
+  font-weight: var(--font_weight_label);
+  opacity: 1;
+}
+.outlined[class*="disabled"],
+.outlined[class*="disabled"]:hover {
+  background-color: unset;
+  box-shadow: 0 0 0 1px var(--color10);
+  cursor: not-allowed;
+}
+.outlined[class*="disabled"] input::placeholder {
+  color: var(--color30);
+}
+
+/* RAISED INPUT*/
+.raised {
+  border: none;
+  color: var(--color100);
+  background: var(--white);
+  box-shadow: var(--shadow2dp);
+}
+.raised:hover {
+  box-shadow: var(--shadow4dp);
+}
+.raised:active,
+.raised:focus {
+  box-shadow: var(--shadow8dp);
+}
+.raised[class*="tag-input"],
+.raised.active[class*="tag-input"],
+.raised.active.success[class*="tag-input"],
+.raised.active.error-helper-text[class*="tag-input"],
+.raised.active.isFilled[class*="tag-input"] {
+  box-shadow: var(--shadow2dp);
+  background: var(--white);
+  color: var(--color100);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.raised[class*="tag-input"]:hover,
+.raised[class*="tag-input"].isFilled:hover {
+  color: var(--color100);
+  box-shadow: var(--shadow4dp);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.raised[class*="tag-input"].active {
+  box-shadow: var(--shadow8dp);
+}
+.raised.active.success[class*="tag-input"],
+.raised.active.error-helper-text[class*="tag-input"] {
+  box-shadow: var(--shadow2dp);
+}
+.raised.active.success[class*="tag-input"]:hover,
+.raised.active.error-helper-text[class*="tag-input"]:hover {
+  box-shadow: var(--shadow4dp);
+}
+.raised.active.success[class*="tag-input"]:focus,
+.raised.active.error-helper-text[class*="tag-input"]:focus  {
+  box-shadow: var(--shadow8dp);
+}
+.raised[class*="tag-input"] input::placeholder {
+  color: var(--color40);
+  opacity: 1;
+  visibility: visible;
+  display: initial;
+}
+.raised[class*="tag-input"] label {
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+  opacity: 1;
+}
+.raised[class*="tag-input"].active.isFilled label,
+.raised[class*="tag-input"].active label {
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+  opacity: 1;
+}
+.raised[class*="disabled"],
+.raised[class*="disabled"]:hover {
+  background-color: var(--color5);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.raised[class*="disabled"] input::placeholder {
+  color: var(--color40);
+}
+
+/* SMOOTH INPUT*/
+.smooth {
+  border: none;
+  color: var(--color100);
+  background: var(--color5);
+}
+.smooth:hover {
+  background: var(--color10);
+}
+.smooth:active,
+.smooth:focus {
+  background: var(--color20);
+}
+.smooth[class*="tag-input"],
+.smooth.active[class*="tag-input"],
+.smooth.active.isFilled[class*="tag-input"],
+.smooth.active.success[class*="tag-input"],
+.smooth.active.error-helper-text[class*="tag-input"] {
+  box-shadow: none;
+  background: var(--color5);
+  color: var(--color100);
+  border: none;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.smooth[class*="tag-input"]:hover,
+.smooth[class*="tag-input"].isFilled:hover {
+  color: var(--color100);
+  background: var(--color10);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.smooth[class*="tag-input"] input::placeholder {
+  color: var(--color40);
+  opacity: 1;
+  visibility: visible;
+  display: initial;
+}
+.smooth.active.success[class*="tag-input"],
+.smooth.active.error-helper-text[class*="tag-input"] {
+  background: var(--color5);
+}
+.smooth.active.success[class*="tag-input"]:focus,
+.smooth.active.error-helper-text[class*="tag-input"]:focus  {
+  background: var(--color10);
+}
+.smooth[class*="tag-input"] label {
+  opacity: 1;
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+}
+.smooth[class*="tag-input"].active.isFilled label,
+.smooth[class*="tag-input"].active label {
+  color: var(--color70);
+  opacity: 1;
+}
+.smooth[class*="tag-input"]:focus {
+  box-shadow: none;
+}
+.smooth[class*="disabled"],
+.smooth[class*="disabled"]:hover {
+  background-color: var(--color0);
+  opacity: 1;
+  cursor: not-allowed;
+}
+.smooth[class*="disabled"] input::placeholder {
+  color: var(--color30);
+}
+
+/* FILLED INPUT*/
+.filled {
+  border: none;
+  color: var(--color0);
+  background: var(--color40);
+}
+.filled:hover {
+  background: var(--color50);
+}
+.filled:active,
+.filled:focus {
+  background: var(--color70);
+  box-shadow: var(--shadow8dp);
+}
+.filled[class*="tag-input"],
+.filled.active[class*="tag-input"],
+.filled.active.isFilled[class*="tag-input"] {
+  box-shadow: none;
+  background: var(--color50);
+  color: var(--color0);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filled[class*="tag-input"] input {
+  color: var(--color0);
+}
+.filled svg {
+  fill: var(--color0) !important;
+}
+.filled[class*="tag-input"]:hover,
+.filled[class*="tag-input"].isFilled:hover {
+  color: var(--color0);
+  box-shadow: none;
+  background: var(--color60);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filled[class*="tag-input"].active {
+  box-shadow: none;
+  background: var(--color70);
+}
+.filled.active.success[class*="tag-input"],
+.filled.active.error-helper-text[class*="tag-input"] {
+  background: var(--color50);
+}
+.filled.active.success[class*="tag-input"]:hover,
+.filled.active.error-helper-text[class*="tag-input"]:hover {
+  background: var(--color60);
+}
+.filled.active.success[class*="tag-input"]:focus,
+.filled.active.error-helper-text[class*="tag-input"]:focus  {
+  background: var(--color70);
+}
+.filled[class*="tag-input"] input::placeholder {
+  color: var(--color20);
+  opacity: 1;
+  visibility: visible;
+  display: initial;
+}
+.filled[class*="tag-input"] label {
+  opacity: 1;
+  font-weight: var(--font_weight_label);
+}
+.filled[class*="tag-input"].active.isFilled label,
+.filled[class*="tag-input"].active label {
+  color: var(--color70);
+  font-weight: var(--font_weight_label);
+  opacity: 1;
+}
+.filled[class*="disabled"],
+.filled[class*="disabled"]:hover {
+  background-color: var(--color5);
+  box-shadow: none;
+  opacity: 1;
+  cursor: not-allowed;
+}
+.filled[class*="disabled"] input::placeholder {
+  color: var(--color40);
+}
+
+/* TAGS */
+.outlined[class*="tag-input"] span[class*="tag"],
+.raised[class*="tag-input"] span[class*="tag"],
+.smooth[class*="tag-input"] span[class*="tag"],
+.filled[class*="tag-input"] span[class*="tag"] {
+  border-radius: var(--s8);
+  padding-left: 0.6rem;
+}
+.outlined[class*="tag-input"] span[class*="tag"],
+.outlined[class*="tag-input"] span[class*="tag"]:visited {
+  color: var(--color100);
+  background-color: var(--color10);
+  transition: all 180ms ease-in;
+}
+.raised[class*="tag-input"] span[class*="tag"],
+.raised[class*="tag-input"] span[class*="tag"]:visited,
+.raised[class*="tag-input"] span[class*="tag"]:hover {
+  color: var(--color90);
+  background-color: var(--color5);
+  transition: all 180ms ease-in;
+  box-shadow: var(--shadow1dp)
+}
+.smooth[class*="tag-input"] span[class*="tag"],
+.smooth[class*="tag-input"] span[class*="tag"]:visited {
+  color: var(--white);
+  background-color: var(--color70);
+  transition: all 180ms ease-in;
+}
+.filled[class*="tag-input"] span[class*="tag"],
+.filled[class*="tag-input"] span[class*="tag"]:visited {
+  color: var(--white);
+  background-color: var(--color80);
+  transition: all 180ms ease-in;
+}
+.outlined[class*="tag-input"] span[class*="tag"]:hover {
+  background-color: var(--color10);
+  transition: all 200ms ease-in;
+}
+.smooth[class*="tag-input"] span[class*="tag"]:hover {
+  background-color: var(--color70);
+  transition: all 200ms ease-in;
+}
+.filled[class*="tag-input"] span[class*="tag"]:hover {
+  background-color: var(--color80);
+  transition: all 200ms ease-in;
+}
+.outlined[class*="tag-input"] span[class*="tag"] svg,
+.raised[class*="tag-input"] span[class*="tag"] svg {
+  color: var(--color70);
+}
+.smooth[class*="tag-input"] span[class*="tag"] svg {
+  color: var(--color20);
+}
+.filled[class*="tag-input"] span[class*="tag"] svg {
+  color: var(--color30);
+}
+.outlined[class*="tag-input"] span[class*="tag"] button[class*="tag-remove"],
+.smooth[class*="tag-input"] span[class*="tag"] button[class*="tag-remove"],
+.raised[class*="tag-input"] span[class*="tag"] button[class*="tag-remove"],
+.filled[class*="tag-input"] span[class*="tag"] button[class*="tag-remove"] {
+  opacity: 1;
+  margin: 0 -0.2rem 0 0.2rem !important;
+}
+.outlined[class*="tag-input"] span[class*="tag"]
+  button[class*="tag-remove"]
+  > span[class*="small-cross"]
+  > svg,
+.raised[class*="tag-input"] span[class*="tag"]
+  button[class*="tag-remove"]
+  > span[class*="small-cross"]
+  > svg {
+  color: var(--color60);
+}
+.smooth[class*="tag-input"] span[class*="tag"]
+  button[class*="tag-remove"]
+  > span[class*="small-cross"]
+  > svg {
+  color: var(--color20);
+}
+.filled[class*="tag-input"] span[class*="tag"]
+  button[class*="tag-remove"]
+  > span[class*="small-cross"]
+  > svg {
+  color: var(--color30);
+}
+.outlined[class*="tag-input"] span[class*="tag"]
+  button[class*="tag-remove"]:hover
+  > span[class*="small-cross"]
+  > svg,
+.raised[class*="tag-input"] span[class*="tag"]
+  button[class*="tag-remove"]:hover
+  > span[class*="small-cross"]
+  > svg {
+  color: var(--color100);
+  opacity: 1;
+  transition: all 180ms ease-in;
+}
+.smooth[class*="tag-input"] span[class*="tag"]
+  button[class*="tag-remove"]:hover
+  > span[class*="small-cross"]
+  > svg {
+  color: var(--white);
+  opacity: 1;
+  transition: all 180ms ease-in;
+}
+.filled[class*="tag-input"] span[class*="tag"]
+  button[class*="tag-remove"]:hover
+  > span[class*="small-cross"]
+  > svg {
+  color: var(--color10);
+  opacity: 1;
+  transition: all 180ms ease-in;
+}
+.outlined[class*="tag-input"] span[class*="tag"].active,
+.raised[class*="tag-input"] span[class*="tag"].active {
+  color: var(--color100);
+  background-color: var(--color100);
+  transition: all 180ms ease-in;
+}
+.smooth[class*="tag-input"] span[class*="tag"].active {
+  color: var(--white);
+  background-color: var(--white);
+  transition: all 180ms ease-in;
+}
+.filled[class*="tag-input"] span[class*="tag"].active {
+  color: var(--color10);
+  background-color: var(--color10);
+  transition: all 180ms ease-in;
+}
+.outlined[class*="tag-input"] span[class*="tag"].active svg,
+.outlined[class*="tag-input"] span[class*="tag"].active svg:hover,
+.raised[class*="tag-input"] span[class*="tag"].active svg,
+.raised[class*="tag-input"] span[class*="tag"].active svg:hover {
+  background-color: transparent;
+  color: var(--color100);
+}
+.smooth[class*="tag-input"] span[class*="tag"].active svg,
+.smooth[class*="tag-input"] span[class*="tag"].active svg:hover {
+  background-color: transparent;
+  color: var(--white);
+}
+.filled[class*="tag-input"] span[class*="tag"].active svg,
+.filled[class*="tag-input"] span[class*="tag"].active svg:hover {
+  background-color: transparent;
+  color: var(--color10);
+}

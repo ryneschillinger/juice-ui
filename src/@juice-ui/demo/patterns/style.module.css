@@ -1,0 +1,126 @@
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.sub_title {
+  padding-top: 1rem;
+}
+.h3_title {
+  padding-top: 1rem;
+}
+.h6_title {
+  padding-top: 1.5rem;
+}
+.text {
+  padding-top: 0.5rem;
+}
+.text_warning {
+  color: var(--yellow80);
+  font-weight: var(--font_weight_body_medium);
+}
+.text_primary {
+  color: var(--color80);
+  font-weight: var(--font_weight_body_medium);
+}
+.text_command__code {
+  color: var(--blue100);
+  background: var(--blue10);
+  border-radius: 0.25rem;
+  width: fit-content;
+  padding: 0 0.75rem;
+  line-height: 2.5rem;
+  margin-top: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+.text_command__success {
+  color: var(--green100);
+  background: var(--green5);
+  border-radius: 0.25rem;
+  /*height: 2.5rem;*/
+  width: fit-content;
+  padding: 0 0.75rem;
+  line-height: 2.5rem;
+  margin-top: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+.text_command__warning {
+  color: var(--yellow100);
+  background: var(--yellow5);
+  border-radius: 0.25rem;
+  /* height: 2.5rem;*/
+  width: fit-content;
+  padding: 0 0.75rem;
+  line-height: 2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+.link,
+.link:active {
+  color: var(--blue60);
+  margin: 0 0.25rem;
+  text-decoration: underline;
+}
+.link:hover {
+  color: var(--blue70);
+  text-decoration: underline;
+}
+.sidebarLink,
+.sidebarLink:active {
+  color: var(--blue60);
+  text-decoration: none;
+  display: block;
+  margin: 1rem 0 0 0;
+}
+.sidebarLink:hover {
+  color: var(--blue70);
+  text-decoration: underline;
+}
+.listItem {
+  margin-top: 1rem;
+}
+
+.listItem strong, .nestedList strong, .text strong {
+  font-weight: var(--font_weight_body_semibold) !important;
+}
+
+.patternExample {
+  height: auto;
+  display: block;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: 1px solid var(--blue10);
+}
+
+.patternExampleCorrect {
+  height: auto;
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: 1px solid var(--green50);
+}
+
+.patternExampleIncorrect {
+  height: auto;
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: 1px solid var(--red50);
+}
+
+.patternExampleCaption {
+  margin: -0.5rem 0 1.25rem 0;
+  font-size: var(--font_size_caption);
+  font-weight: var(--font_weight_body_medium);
+  letter-spacing: var(--letter_spacing_caption);
+}
+
+.nestedList li {
+  margin-top: 1rem;
+}

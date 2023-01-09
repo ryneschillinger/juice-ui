@@ -1,0 +1,275 @@
+:root {
+  /***NEW PALLETE SCHEME***/
+  --black: #000000;
+  --white: #ffffff;
+  /*PRIMARY COLORS*/
+  /*Grey*/
+  --grey0: #f7f7fc;
+  --grey5: #ededf2;
+  --grey10: #e0e0e8;
+  --grey20: #d0d0d8;
+  --grey30: #bbbbc6;
+  --grey40: #a2a2ae;
+  --grey50: #888895;
+  --grey60: #71717e;
+  --grey70: #5e5e6b;
+  --grey80: #5e5e6b;
+  --grey90: #34343c;
+  --grey100: #23232b;
+  /*Blue*/
+  --blue0: #F5F8FF;
+  --blue5: #ebf2ff;
+  --blue10: #d8e6ff;
+  --blue20: #c4daff;
+  --blue30: #9dc2ff;
+  --blue40: #78aaff;
+  --blue50: #4e90ff;
+  --blue60: #2979ff;
+  --blue70: #2264d1;
+  --blue80: #1b4ea3;
+  --blue90: #133774;
+  --blue100: #0c2146;
+  /*Green*/
+  --green0: #f5fff5;
+  --green5: #eafaea;
+  --green10: #d7f4d8;
+  --green20: #b8ebba;
+  --green30: #8ede91;
+  --green40: #5ece63;
+  --green50: #21b527;
+  --green60: #139e19;
+  --green70: #078a0d;
+  --green80: #2b662e;
+  --green90: #1f4921;
+  --green100: #132c14;
+  /*Yellow*/
+  --yellow0: #fffbed;
+  --yellow5: #fff5d7;
+  --yellow10: #ffecb8;
+  --yellow20: #ffde89;
+  --yellow30: #ffce5b;
+  --yellow40: #fcbc1a;
+  --yellow50: #f4ad03;
+  --yellow60: #e19b00;
+  --yellow70: #bb7e00;
+  --yellow80: #855900;
+  --yellow90: #553900;
+  --yellow100: #3c2700;
+  /*Red*/
+  --red0: #fff4f3;
+  --red5: #fee8e7;
+  --red10: #ffd7d3;
+  --red20: #ffc4bf;
+  --red30: #ffa59e;
+  --red40: #ff8178;
+  --red50: #fb574b;
+  --red60: #ef2f21;
+  --red70: #ca1a0d;
+  --red80: #a00a0a;
+  --red90: #730b04;
+  --red100: #4b0702;
+  /*SECONDARY COLORS*/
+  /*Purple*/
+  --purple0: #fcf4ff;
+  --purple5: #f9e9ff;
+  --purple10: #f4d4ff;
+  --purple20: #edbbff;
+  --purple30: #e499ff;
+  --purple40: #d973fd;
+  --purple50: #ca55f2;
+  --purple60: #b233de;
+  --purple70: #9c19ca;
+  --purple80: #7c0da3;
+  --purple90: #550372;
+  --purple100: #37004a;
+  /*Teal*/
+  --teal0: #f3fffd;
+  --teal5: #e0f9f4;
+  --teal10: #c9f2eb;
+  --teal20: #b0ebdf;
+  --teal30: #7be1cd;
+  --teal40: #3ed2b4;
+  --teal50: #04b999;
+  --teal60: #009f84;
+  --teal70: #00826d;
+  --teal80: #006352;
+  --teal90: #004638;
+  --teal100: #002b23;
+  /*Orange*/
+  --orange0: #fff5ed;
+  --orange5: #ffedde;
+  --orange10: #ffe0c6;
+  --orange20: #ffcea7;
+  --orange30: #ffb478;
+  --orange40: #ff8f34;
+  --orange50: #f97307;
+  --orange60: #df6400;
+  --orange70: #c25700;
+  --orange80: #8e4000;
+  --orange90: #622c00;
+  --orange100: #3d2000;
+  /*Pink*/
+  --pink0: #fff3f8;
+  --pink5: #FFE9F2;
+  --pink10: #ffd9e9;
+  --pink20: #ffc1db;
+  --pink30: #ffa0c8;
+  --pink40: #ff74ae;
+  --pink50: #fb4893;
+  --pink60: #f22279;
+  --pink70: #d11061;
+  --pink80: #9c0947;
+  --pink90: #6f062a;
+  --pink100: #49011f;
+
+  /* SHADOWS */
+  --greyShadow1dp: 0px 1px 2px rgba(89, 90, 107, 0.32),
+  0px 0px 1px rgba(57, 57, 68, 0.32);
+  --greyShadow2dp: 0px 2px 4px rgba(89, 90, 107, 0.24),
+    0px 1px 2px rgba(57, 57, 68, 0.24);
+  --greyShadow4dp: 0px 4px 8px rgba(89, 90, 107, 0.24),
+    0px 2px 4px rgba(57, 57, 68, 0.24);
+  --greyShadow8dp: 0px 8px 16px rgba(89, 90, 107, 0.16),
+    0px 4px 8px rgba(57, 57, 68, 0.16);
+  --greyShadow16dp: 0px 16px 32px rgba(89, 90, 107, 0.16),
+    0px 8px 16px rgba(57, 57, 68, 0.16);
+  --greyShadow24dp: 0px 24px 48px rgba(89, 90, 107, 0.20),
+    0px 12px 24px rgba(57, 57, 68, 0.20);
+
+  --blueShadow1dp: 0px 1px 2px rgba(41, 121, 255, 0.32),
+    0px 0px 1px rgba(27, 78, 163, 0.32);
+  --blueShadow2dp: 0px 2px 4px rgba(41, 121, 255, 0.24),
+    0px 1px 2px rgba(27, 78, 163, 0.24);
+  --blueShadow4dp: 0px 4px 8px rgba(41, 121, 255, 0.24),
+    0px 2px 4px rgba(27, 78, 163, 0.24);
+  --blueShadow8dp: 0px 8px 16px rgba(41, 121, 255, 0.16),
+    0px 4px 8px rgba(27, 78, 163, 0.16);
+  --blueShadow16dp: 0px 16px 32px rgba(41, 121, 255, 0.16),
+    0px 8px 16px rgba(27, 78, 163, 0.16);
+  --blueShadow24dp: 0px 24px 48px rgba(41, 121, 255, 0.20),
+    0px 12px 24px rgba(27, 78, 163, 0.20);
+
+  --redShadow1dp: 0px 1px 2px rgba(239, 47, 33, 0.32),
+    0px 0px 1px rgba(160, 10, 10, 0.32);
+  --redShadow2dp: 0px 2px 4px rgba(239, 47, 33, 0.24),
+    0px 1px 2px rgba(160, 10, 10, 0.24);
+  --redShadow4dp: 0px 4px 8px rgba(239, 47, 33, 0.24),
+    0px 2px 4px rgba(160, 10, 10, 0.24);
+  --redShadow8dp: 0px 8px 16px rgba(239, 47, 33, 0.16),
+    0px 4px 8px rgba(160, 10, 10, 0.16);
+  --redShadow16dp: 0px 16px 32px rgba(239, 47, 33, 0.16),
+    0px 8px 16px rgba(160, 10, 10, 0.16);
+  --redShadow24dp: 0px 24px 48px rgba(239, 47, 33, 0.20),
+    0px 12px 24px rgba(160, 10, 10, 0.20);
+
+  --greenShadow1dp: 0px 1px 2px rgba(19, 158, 25, 0.32),
+    0px 0px 1px rgba(43, 102, 46, 0.32);
+  --greenShadow2dp: 0px 2px 4px rgba(19, 158, 25, 0.24),
+    0px 1px 2px rgba(43, 102, 46, 0.24);
+  --greenShadow4dp: 0px 4px 8px rgba(19, 158, 25, 0.16),
+    0px 2px 4px rgba(43, 102, 46, 0.16);
+  --greenShadow8dp: 0px 8px 16px rgba(19, 158, 25, 0.16),
+    0px 4px 8px rgba(43, 102, 46, 0.16);
+  --greenShadow16dp: 0px 16px 32px rgba(19, 158, 25, 0.16),
+    0px 8px 16px rgba(43, 102, 46, 0.16);
+  --greenShadow24dp: 0px 24px 48px rgba(19, 158, 25, 0.20),
+    0px 12px 24px rgba(43, 102, 46, 0.20);
+
+  --yellowShadow1dp: 0px 1px 2px rgba(225, 155, 0, 0.32),
+    0px 0px 1px rgba(133, 89, 0, 0.32);
+  --yellowShadow2dp: 0px 2px 4px rgba(225, 155, 0, 0.24),
+    0px 1px 2px rgba(133, 89, 0, 0.24);
+  --yellowShadow4dp: 0px 4px 8px rgba(225, 155, 0, 0.16),
+    0px 2px 4px rgba(133, 89, 0, 0.16);
+  --yellowShadow8dp: 0px 8px 16px rgba(225, 155, 0, 0.16),
+    0px 4px 8px rgba(133, 89, 0, 0.16);
+  --yellowShadow16dp: 0px 16px 32px rgba(225, 155, 0, 0.16),
+    0px 8px 16px rgba(133, 89, 0, 0.16);
+  --yellowShadow24dp: 0px 24px 48px rgba(225, 155, 0, 0.20),
+    0px 12px 24px rgba(133, 89, 0, 0.20);
+
+  --purpleShadow1dp: 0px 1px 2px rgba(169, 45, 181, 0.32),
+    0px 0px 1px rgba(106, 19, 140, 0.32);
+  --purpleShadow2dp: 0px 2px 4px rgba(169, 45, 181, 0.24),
+    0px 1px 2px rgba(106, 19, 140, 0.24);
+  --purpleShadow4dp: 0px 4px 8px rgba(169, 45, 181, 0.16),
+    0px 2px 4px rgba(106, 19, 140, 0.16);
+  --purpleShadow8dp: 0px 8px 16px rgba(169, 45, 181, 0.16),
+    0px 4px 8px rgba(106, 19, 140, 0.16);
+  --purpleShadow16dp: 0px 16px 32px rgba(169, 45, 181, 0.16),
+    0px 8px 16px rgba(106, 19, 140, 0.16);
+  --purpleShadow24dp: 0px 24px 48px rgba(169, 45, 181, 0.20),
+    0px 12px 24px rgba(106, 19, 140, 0.20);
+
+  --tealShadow1dp: 0px 1px 2px rgba(0, 159, 132, 0.32),
+    0px 0px 1px rgba(0, 99, 82, 0.32);
+  --tealShadow2dp: 0px 2px 4px rgba(0, 159, 132, 0.24),
+    0px 1px 2px rgba(0, 99, 82, 0.24);
+  --tealShadow4dp: 0px 4px 8px rgba(0, 159, 132, 0.16),
+    0px 2px 4px rgba(0, 99, 82, 0.16);
+  --tealShadow8dp: 0px 8px 16px rgba(0, 159, 132, 0.16),
+    0px 4px 8px rgba(0, 99, 82, 0.16);
+  --tealShadow16dp: 0px 16px 32px rgba(0, 159, 132, 0.16),
+    0px 8px 16px rgba(0, 99, 82, 0.16);
+  --tealShadow24dp: 0px 24px 48px rgba(0, 159, 132, 0.20),
+    0px 12px 24px rgba(0, 99, 82, 0.20);
+
+  --orangeShadow1dp: 0px 1px 2px rgba(224, 102, 2, 0.32),
+    0px 0px 1px rgba(142, 64, 0, 0.32);
+  --orangeShadow2dp: 0px 2px 4px rgba(224, 102, 2, 0.24),
+    0px 1px 2px rgba(142, 64, 0, 0.24);
+  --orangeShadow4dp: 0px 4px 8px rgba(224, 102, 2, 0.16),
+    0px 2px 4px rgba(142, 64, 0, 0.16);
+  --orangeShadow8dp: 0px 8px 16px rgba(224, 102, 2, 0.16),
+    0px 4px 8px rgba(142, 64, 0, 0.16);
+  --orangeShadow16dp: 0px 16px 32px rgba(224, 102, 2, 0.16),
+    0px 8px 16px rgba(142, 64, 0, 0.16);
+  --orangeShadow24dp: 0px 24px 48px rgba(224, 102, 2, 0.20),
+    0px 12px 24px rgba(142, 64, 0, 0.20);
+
+  --pinkShadow1dp: 0px 1px 2px rgba(239, 42, 109, 0.32),
+    0px 0px 1px rgba(158, 33, 75, 0.32);
+  --pinkShadow2dp: 0px 2px 4px rgba(239, 42, 109, 0.24),
+    0px 1px 2px rgba(158, 33, 75, 0.24);
+  --pinkShadow4dp: 0px 4px 8px rgba(239, 42, 109, 0.16),
+    0px 2px 4px rgba(158, 33, 75, 0.16);
+  --pinkShadow8dp: 0px 8px 16px rgba(239, 42, 109, 0.16),
+    0px 4px 8px rgba(158, 33, 75, 0.16);
+  --pinkShadow16dp: 0px 16px 32px rgba(239, 42, 109, 0.16),
+    0px 8px 16px rgba(158, 33, 75, 0.16);
+  --pinkShadow24dp: 0px 24px 48px rgba(239, 42, 109, 0.20),
+    0px 12px 24px rgba(158, 33, 75, 0.20);
+
+  /*NEW GRADIENTS*/
+  --gradBlue: var(--blue60) 0%, var(--purple70) 100%;
+  --gradBlueRev: var(--purple70) 0%, var(--blue60) 100%;
+  --gradRed: var(--red60) 0%, var(--pink70) 100%;
+  --gradRedRev: var(--pink70) 0%, var(--red60) 100%;
+  --gradGreen: var(--green60) 0%, var(--teal70) 100%;
+  --gradGreenRev: var(--teal70) 0%, var(--green60) 100%;
+  --gradYellow: var(--yellow60) 0%, var(--orange70) 100%;
+  --gradYellowRev: var(--orange70) 0%, var(--yellow60) 100%;
+  --gradGrey: var(--grey40) 0%, var(--grey70) 100%;
+  --gradGreyRev: var(--grey70) 0%, var(--grey40) 100%;
+
+  --gradPurple: var(--purple60) 0%, var(--blue70) 100%;
+  --gradPurpleRev: var(--blue70) 0%, var(--purple60) 100%;
+  --gradPink: var(--pink60) 0%, var(--red70) 100%;
+  --gradPinkRev: var(--red70) 0%, var(--pink60) 100%;
+  --gradTeal: var(--teal60) 0%, var(--green70) 100%;
+  --gradTealRev: var(--green70) 0%, var(--teal60) 100%;
+  --gradOrange: var(--orange60) 0%, var(--yellow70) 100%;
+  --gradOrangeRev: var(--yellow70) 0%, var(--orange60) 100%;
+
+  /*Ligth*/
+  --gradBlueL: var(--blue10) 0%, var(--purple30) 100%;
+  --gradBlueRevL: var(--purple30) 0%, var(--blue10) 100%;
+  --gradRedL: var(--red10) 0%, var(--pink30) 100%;
+  --gradRedRevL: var(--pink30) 0%, var(--red10) 100%;
+  --gradGreenL: var(--green10) 0%, var(--teal30) 100%;
+  --gradGreenRevL: var(--teal30) 0%, var(--green10) 100%;
+  --gradYellowL: var(--yellow10) 0%, var(--orange30) 100%;
+  --gradYellowRevL: var(--orange30) 0%, var(--yellow10) 100%;
+  --gradGreyL: var(--grey10) 0%, var(--grey40) 100%;
+  --gradGreyRevL: var(--grey40) 0%, var(--grey10) 100%;
+}

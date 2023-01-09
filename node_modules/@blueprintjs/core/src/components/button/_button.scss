@@ -32,7 +32,7 @@ Styleguide button
 
   &:empty {
     // override padding from other modifiers (for CSS icon support)
-    // stylelint-disable-next-line declaration-no-important
+    /* stylelint-disable-next-line declaration-no-important */
     padding: 0 !important;
   }
 
@@ -92,9 +92,9 @@ Styleguide button
     }
 
     .#{$ns}-button-spinner {
+      margin: 0;
       // spinner appears centered within button
       position: absolute;
-      margin: 0;
     }
 
     > :not(.#{$ns}-button-spinner) {
@@ -136,7 +136,9 @@ Styleguide button
       }
 
       #{$icon-classes} {
-        color: $pt-dark-icon-color;
+        &:not([class*="#{$ns}-intent-"]) {
+          color: $pt-dark-icon-color;
+        }
       }
     }
 
@@ -155,7 +157,7 @@ Styleguide button
   &[class*="#{$ns}-intent-"] {
     &::before,
     #{$icon-classes} {
-      // stylelint-disable-next-line declaration-no-important
+      /* stylelint-disable-next-line declaration-no-important */
       color: inherit !important;
     }
   }

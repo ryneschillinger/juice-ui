@@ -17,19 +17,25 @@
 import classNames from "classnames";
 import * as React from "react";
 import { polyfill } from "react-lifecycles-compat";
+
 import { AbstractPureComponent2, Classes } from "../../common";
-import { DISPLAYNAME_PREFIX, IIntentProps, IProps } from "../../common/props";
+import { DISPLAYNAME_PREFIX, IntentProps, Props } from "../../common/props";
 import { clamp } from "../../common/utils";
 
-export interface IProgressBarProps extends IProps, IIntentProps {
+// eslint-disable-next-line deprecation/deprecation
+export type ProgressBarProps = IProgressBarProps;
+/** @deprecated use ProgressBarProps */
+export interface IProgressBarProps extends Props, IntentProps {
     /**
      * Whether the background should animate.
+     *
      * @default true
      */
     animate?: boolean;
 
     /**
      * Whether the background should be striped.
+     *
      * @default true
      */
     stripes?: boolean;
@@ -43,7 +49,7 @@ export interface IProgressBarProps extends IProps, IIntentProps {
 }
 
 @polyfill
-export class ProgressBar extends AbstractPureComponent2<IProgressBarProps, {}> {
+export class ProgressBar extends AbstractPureComponent2<ProgressBarProps> {
     public static displayName = `${DISPLAYNAME_PREFIX}.ProgressBar`;
 
     public render() {
@@ -54,11 +60,18 @@ export class ProgressBar extends AbstractPureComponent2<IProgressBarProps, {}> {
             { [Classes.PROGRESS_NO_ANIMATION]: !animate, [Classes.PROGRESS_NO_STRIPES]: !stripes },
             className,
         );
+        const percent = value == null ? undefined : 100 * clamp(value, 0, 1);
         // don't set width if value is null (rely on default CSS value)
-        const width = value == null ? null : 100 * clamp(value, 0, 1) + "%";
+        const width = percent == null ? undefined : percent + "%";
 
         return (
-            <div className={classes}>
+            <div
+                aria-valuemax={100}
+                aria-valuemin={0}
+                aria-valuenow={percent == null ? undefined : Math.round(percent)}
+                className={classes}
+                role="progressbar"
+            >
                 <div className={Classes.PROGRESS_METER} style={{ width }} />
             </div>
         );

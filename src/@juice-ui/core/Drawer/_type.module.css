@@ -1,0 +1,26 @@
+/* BUTTONS TYPES*/
+/*--DEFAULT--*/
+.default {
+  font-size: var(--font_size_button);
+  font-family: var(--font_family_button);
+  letter-spacing: var(--letter_spacing_button);
+  padding: 0 0.75rem 0 0.75rem;
+  /* width: 50vw !important;
+  min-width: 360px !important; */
+}
+
+.right {
+  border-radius: var(--s12) 0 0 var(--s12);
+}
+.left {
+  border-radius: 0 var(--s12) var(--s12) 0;
+}
+.top {
+  border-radius: 0 0 var(--s12) var(--s12);
+}
+.bottom {
+  border-radius: var(--s12) var(--s12) 0 0;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}

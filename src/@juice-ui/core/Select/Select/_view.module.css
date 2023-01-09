@@ -1,0 +1,170 @@
+/*POPOVER*/
+.select-popover {
+  box-shadow: none !important;
+  width: 100%;
+}
+.select-popover,
+.select-popover > div {
+  border-radius: var(--s12);
+}
+.select-dense-popover,
+.select-dense-popover > div {
+  border-radius: var(--s8);
+}
+.select-popover ul {
+  border-radius: var(--s12);
+}
+.select-dense-popover ul {
+  border-radius: var(--s8);
+}
+.select-popover-filterable ul {
+  border-radius: 0 0 var(--s12) var(--s12) !important;
+}
+.select-dense-popover-filterable ul {
+  border-radius: 0 0 var(--s8) var(--s8) !important;
+}
+.popover[class*="minimal"] {
+  box-shadow: none;
+  margin-top: 10px !important;
+  background: transparent;
+}
+.popover > div[class*="popover-content"] {
+  background: transparent;
+}
+/*BUTTON*/
+.select-button span:not([class*="icon"]) {
+  font-size: var(--font_size_body);
+  font-weight: var(--font_weight_body);
+  color: var(--color100);
+}
+.select-button.placeholder-text span:not([class*="icon"]) {
+  font-size: var(--font_size_body);
+  font-weight: var(--font_weight_body);
+  color: var(--color40) !important;
+}
+.select-button span[class*="icon"],
+.select-button:hover span[class*="icon"] {
+  color: var(--color70);
+}
+.select-button[class*="outlined"],
+.select-button[class*="outlined"]:hover {
+  background: var(--white);
+}
+.select-button[class*="outlined"]:hover {
+  background: var(--white);
+}
+.select-button[class*="filled"] span:not([class*="icon"]) {
+  color: var(--white);
+}
+.select-button[class*="filled"].placeholder-text span:not([class*="icon"]) {
+  color: var(--color30) !important;
+}
+.select-button[class*="filled"] span[class*="icon"],
+.select-button[class*="filled"]:hover span[class*="icon"] {
+  color: var(--color20);
+}
+.button-fill-width span[class*="caret-down"] {
+  margin-left: auto;
+}
+.button-center-align {
+  display: flex !important;
+  justify-content: center !important;
+}
+.button-center-align span[class*="caret-down"]  {
+  margin-left: 0 !important;
+}
+/*CARET-DOWN*/
+.outlined::after,
+.raised::after,
+.smooth::after {
+  color: var(--color40);
+}
+.outlined:hover::after,
+.raised:hover::after,
+.smooth:hover::after {
+  color: var(--color60);
+}
+.outlined:active::after,
+.outlined:focus::after,
+.raised:active::after,
+.raised:focus::after,
+.smooth:active::after,
+.smooth:focus::after {
+  color: var(--color90);
+}
+.filled::after {
+  color: var(--color10);
+}
+.filled:hover::after {
+  color: var(--color5);
+}
+.filled:active::after,
+.filled:focus::after {
+  color: var(--color0);
+}
+/*SEARCH INPUT*/
+.select-popover input {
+  border-radius: calc(var(--s12)*0.8) calc(var(--s12)*0.8) 0 0 !important;
+}
+
+.select-dense-popover input {
+  border-radius: calc(var(--s8)*0.8) calc(var(--s8)*0.8) 0 0 !important;
+}
+
+/*OUTLINED DROPDOWN*/
+.outlined {
+  border: none;
+  color: var(--color100);
+  box-shadow: 0 0 0 1px var(--color30) !important;
+}
+.outlined:hover {
+  box-shadow: 0 0 0 1px var(--color80) !important;
+}
+.outlined:active,
+.outlined:focus {
+  box-shadow: 0 0 0 2px var(--color80) !important;
+}
+
+/* RAISED DROPDOWN*/
+.raised {
+  border: none;
+  color: var(--color100);
+  background: var(--white);
+  box-shadow: var(--shadow2dp);
+}
+.raised:hover {
+  box-shadow: var(--shadow4dp);
+}
+.raised:active,
+.raised:focus {
+  box-shadow: var(--shadow8dp);
+}
+
+/* SMOOTH DROPDOWN*/
+.smooth {
+  border: none;
+  color: var(--color100);
+  background: var(--color5);
+}
+.smooth:hover {
+  background: var(--color10);
+}
+.smooth:active,
+.smooth:focus {
+  background: var(--color20);
+}
+
+/* FILLED DROPDOWN*/
+.filled {
+  border: none;
+  color: var(--color0);
+  background: var(--color40);
+}
+.filled:hover {
+  background: var(--color50);
+}
+.filled:active,
+.filled:focus {
+  background: var(--color70);
+  box-shadow: var(--shadow8dp);
+}

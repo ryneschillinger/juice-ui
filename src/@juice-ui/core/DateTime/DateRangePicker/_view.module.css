@@ -1,0 +1,332 @@
+/* GLOBAL STYLES */
+div[class*="daterangepicker"] {
+  display: inline-flex;
+  border-radius: var(--s12);
+}
+
+div[class*="DayPicker-Day"]:hover,
+div[class*="DayPicker-Day"]:focus {
+  background: none !important;
+}
+
+ul[class*="daterangepicker-shortcuts"] a[class*="menu-item"] {
+  color: var(--color70);
+  border-radius: var(--s12);
+}
+
+div[class*="DayPicker-Day"] > div[class*="day-wrapper"]:hover,
+div[class*="DayPicker-Day"] > div[class*="day-wrapper"]:hover {
+  border-radius: var(--s12);
+}
+
+div[class*="DayPicker-Day"][class*="DayPicker-Day--hovered-range-start"]:not([class*="DayPicker-Day--selected"]) {
+  border-radius: var(--s12) !important;
+}
+
+div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"],
+div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"]:hover {
+  border-top-left-radius: var(--s12) !important;
+  border-bottom-left-radius: var(--s12) !important;
+}
+
+div[class*="DayPicker-Day"][class*="DayPicker-Day--hovered-range-end"],
+div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"],
+div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"]:hover,
+div[class*="DayPicker-Day"][class*="DayPicker-Day--hovered-range-end"] > div[class*="day-wrapper"] {
+  border-radius: 0;
+  border-top-right-radius: var(--s12) !important;
+  border-bottom-right-radius: var(--s12) !important;
+}
+
+div[class*="DayPicker-Day--hovered-range"]:not([class*="DayPicker-Day--selected"]):not([class*="DayPicker-Day--selected-range"]):not([class*="DayPicker-Day--hovered-range-start"]):not([class*="DayPicker-Day--selected-range-start"]):not([class*="DayPicker-Day--hovered-range-end"]):not([class*="DayPicker-Day--selected-range-end"]) {
+  border-radius: 0 !important;
+}
+
+/* FLAT STYLE */
+.flat {
+  color: var(--color100);
+}
+.flat div[class*="DayPicker-Day"] > div[class*="day-wrapper"] {
+  border: none !important;
+}
+.flat div[class*="DayPicker-Day"] > div[class*="day-wrapper"]:hover {
+  background: var(--color60) !important;
+  color: var(--color0);
+}
+.flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range"],
+.flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range"]:hover {
+  background: var(--color5);
+  color: var(--color100);
+}
+.flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"],
+.flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"]:hover,
+.flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"],
+.flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"]:hover  {
+  background: var(--color60) !important;
+  color: var(--color0);
+}
+
+.flat div[class*="divider"] {
+  margin: 0.5rem;
+  border-right: 1px solid var(--color10);
+  border-bottom: 1px solid var(--color10);
+}
+
+.flat div[class*="DayPicker-Day--hovered-range"]:not([class*="DayPicker-Day--selected"]):not([class*="DayPicker-Day--selected-range"]):not([class*="DayPicker-Day--selected-range-start"]):not([class*="DayPicker-Day--selected-range-end"]) {
+    background: var(--color5);
+    color: var(--color100);
+}
+
+.flat div[class*="DayPicker-Day--isToday"] {
+  color: var(--color100);
+}
+.flat div[class*="DayPicker-Day--selected"] {
+  background-color: var(--color5);
+}
+
+.flat ul[class*="daterangepicker-shortcuts"] a[class*="menu-item"] {
+  color: var(--color70);
+}
+.flat
+  ul[class*="daterangepicker-shortcuts"]
+  a[class*="menu-item"][class*="active"],
+.flat ul[class*="daterangepicker-shortcuts"] a[class*="menu-item"]:hover {
+  background: var(--color5);
+}
+.flat
+  ul[class*="daterangepicker-shortcuts"]
+  a[class*="menu-item"][class*="active"] {
+  font-weight: 600;
+}
+
+.flat div[class*="datepicker-navbar"] > button {
+  border-radius: 50%;
+  color: var(--color70);
+}
+.flat div[class*="datepicker-navbar"] > button:hover {
+  color: var(--color100);
+  box-shadow: var(--shadow2dp);
+}
+
+.flat div[class*="datepicker-month-select"] > select,
+.flat div[class*="datepicker-year-select"] > select {
+  color: var(--color70);
+}
+.flat div[class*="datepicker-month-select"] > select:hover,
+.flat div[class*="datepicker-year-select"] > select:hover {
+  background: var(--color5);
+  color: var(--color100);
+}
+.flat div[class*="datepicker-month-select"] > span[class*="icon"],
+.flat div[class*="datepicker-year-select"] > span[class*="icon"] {
+  color: var(--color70);
+}
+
+.flat div[class*="datepicker-footer"] > button:hover {
+  background: var(--color5);
+}
+
+.flat div[class*="DayPicker-Day--outside"] > div[class*="day-wrapper"] {
+  color: var(--color40);
+}
+.flat div[class*="DayPicker-Day"]:hover {
+  background: var(--color0);
+}
+/* END STYLE */
+
+
+/* SMOOTH STYLE */
+.smooth {
+  color: var(--color100);
+}
+.smooth[class*="daterangepicker"] {
+  background: var(--color5);
+}
+.smooth div[class*="DayPicker-Day"] > div[class*="day-wrapper"] {
+  border: none !important;
+}
+.smooth div[class*="DayPicker-Day"] > div[class*="day-wrapper"]:hover {
+  background: var(--color60) !important;
+  color: var(--color0);
+}
+.smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range"],
+.smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range"]:hover {
+  background: var(--color10);
+  color: var(--color100);
+}
+.smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"],
+.smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"]:hover,
+.smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"],
+.smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"]:hover  {
+  background: var(--color60) !important;
+  color: var(--color0);
+}
+
+.smooth div[class*="divider"] {
+  margin: 0.5rem;
+  border-right: 1px solid var(--color10);
+  border-bottom: 1px solid var(--color10);
+}
+
+.smooth div[class*="DayPicker-Day--hovered-range"]:not([class*="DayPicker-Day--selected"]):not([class*="DayPicker-Day--selected-range"]):not([class*="DayPicker-Day--selected-range-start"]):not([class*="DayPicker-Day--selected-range-end"]) {
+    background: var(--color10);
+    color: var(--color100);
+}
+
+.smooth div[class*="DayPicker-Day--isToday"] {
+  color: var(--color100);
+}
+.smooth div[class*="DayPicker-Day--selected"] {
+  background-color: var(--color10);
+}
+
+.smooth ul[class*="daterangepicker-shortcuts"] a[class*="menu-item"] {
+  color: var(--color70);
+}
+.smooth
+  ul[class*="daterangepicker-shortcuts"]
+  a[class*="menu-item"][class*="active"],
+.smooth ul[class*="daterangepicker-shortcuts"] a[class*="menu-item"]:hover {
+  background: var(--color10);
+}
+.smooth
+  ul[class*="daterangepicker-shortcuts"]
+  a[class*="menu-item"][class*="active"] {
+  font-weight: 600;
+}
+.smooth
+  ul[class*="daterangepicker-shortcuts"][class*="menu"] {
+  background-color: var(--color5);
+}
+
+.smooth div[class*="datepicker-navbar"] > button {
+  border-radius: 50%;
+  color: var(--color70);
+}
+.smooth div[class*="datepicker-navbar"] > button:hover {
+  color: var(--color100);
+  box-shadow: var(--shadow2dp);
+}
+
+.smooth div[class*="datepicker-month-select"] > select,
+.smooth div[class*="datepicker-year-select"] > select {
+  color: var(--color70);
+}
+.smooth div[class*="datepicker-month-select"] > select:hover,
+.smooth div[class*="datepicker-year-select"] > select:hover {
+  background: var(--color10);
+  color: var(--color100);
+}
+.smooth div[class*="datepicker-month-select"] > span[class*="icon"],
+.smooth div[class*="datepicker-year-select"] > span[class*="icon"] {
+  color: var(--color70);
+}
+
+.smooth div[class*="datepicker-footer"] > button:hover {
+  background: var(--color10);
+}
+
+.smooth div[class*="DayPicker-Day--outside"] > div[class*="day-wrapper"] {
+  color: var(--color40);
+}
+.smooth div[class*="DayPicker-Day"]:hover {
+  background: var(--color0);
+}
+/* END STYLE */
+
+
+/* RAISED STYLE */
+.raised {
+  color: var(--color100);
+}
+.raised[class*="daterangepicker"] {
+  background: var(--white);
+  box-shadow: var(--shadow16dp);
+}
+.raised div[class*="DayPicker-Day"] > div[class*="day-wrapper"] {
+  border: none !important;
+}
+.raised div[class*="DayPicker-Day"] > div[class*="day-wrapper"]:hover {
+  background: var(--color60) !important;
+  color: var(--color0);
+}
+.raised div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range"],
+.raised div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range"]:hover {
+  background: var(--color5);
+  color: var(--color100);
+}
+.raised div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"],
+.raised div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"]:hover,
+.raised div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"],
+.raised div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"]:hover  {
+  background: var(--color60) !important;
+  color: var(--color0);
+}
+
+.raised div[class*="divider"] {
+  margin: 0.5rem;
+  border-right: 1px solid var(--color10);
+  border-bottom: 1px solid var(--color10);
+}
+
+.raised div[class*="DayPicker-Day--hovered-range"]:not([class*="DayPicker-Day--selected"]):not([class*="DayPicker-Day--selected-range"]):not([class*="DayPicker-Day--selected-range-start"]):not([class*="DayPicker-Day--selected-range-end"]) {
+    background: var(--color5);
+    color: var(--color100);
+}
+
+.raised div[class*="DayPicker-Day--isToday"] {
+  color: var(--color100);
+}
+.raised div[class*="DayPicker-Day--selected"] {
+  background-color: var(--color5);
+}
+
+.raised ul[class*="daterangepicker-shortcuts"] a[class*="menu-item"] {
+  color: var(--color70);
+}
+.raised
+  ul[class*="daterangepicker-shortcuts"]
+  a[class*="menu-item"][class*="active"],
+.raised ul[class*="daterangepicker-shortcuts"] a[class*="menu-item"]:hover {
+  background: var(--color5);
+}
+.raised
+  ul[class*="daterangepicker-shortcuts"]
+  a[class*="menu-item"][class*="active"] {
+  font-weight: 600;
+}
+
+.raised div[class*="datepicker-navbar"] > button {
+  border-radius: 50%;
+  color: var(--color70);
+}
+.raised div[class*="datepicker-navbar"] > button:hover {
+  color: var(--color100);
+  box-shadow: var(--shadow2dp);
+}
+
+.raised div[class*="datepicker-month-select"] > select,
+.raised div[class*="datepicker-year-select"] > select {
+  color: var(--color70);
+}
+.raised div[class*="datepicker-month-select"] > select:hover,
+.raised div[class*="datepicker-year-select"] > select:hover {
+  background: var(--color5);
+  color: var(--color100);
+}
+.raised div[class*="datepicker-month-select"] > span[class*="icon"],
+.raised div[class*="datepicker-year-select"] > span[class*="icon"] {
+  color: var(--color70);
+}
+
+.raised div[class*="datepicker-footer"] > button:hover {
+  background: var(--color5);
+}
+
+.raised div[class*="DayPicker-Day--outside"] > div[class*="day-wrapper"] {
+  color: var(--color40);
+}
+.raised div[class*="DayPicker-Day"]:hover {
+  background: var(--color0);
+}
+/*END STYLE*/

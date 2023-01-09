@@ -17,25 +17,29 @@
 import classNames from "classnames";
 import * as React from "react";
 import { polyfill } from "react-lifecycles-compat";
-import { AbstractPureComponent2, Classes, DISPLAYNAME_PREFIX, IProps } from "../../common";
+
+import { AbstractPureComponent2, Classes, DISPLAYNAME_PREFIX, Props } from "../../common";
 import { Icon, IconName } from "../icon/icon";
 import { normalizeKeyCombo } from "./hotkeyParser";
 
-const KeyIcons: { [key: string]: IconName } = {
-    alt: "key-option",
-    cmd: "key-command",
-    ctrl: "key-control",
-    delete: "key-delete",
-    down: "arrow-down",
-    enter: "key-enter",
-    left: "arrow-left",
-    meta: "key-command",
-    right: "arrow-right",
-    shift: "key-shift",
-    up: "arrow-up",
+const KeyIcons: { [key: string]: { icon: IconName; iconTitle: string } } = {
+    alt: { icon: "key-option", iconTitle: "Alt/Option key" },
+    cmd: { icon: "key-command", iconTitle: "Command key" },
+    ctrl: { icon: "key-control", iconTitle: "Control key" },
+    delete: { icon: "key-delete", iconTitle: "Delete key" },
+    down: { icon: "arrow-down", iconTitle: "Down key" },
+    enter: { icon: "key-enter", iconTitle: "Enter key" },
+    left: { icon: "arrow-left", iconTitle: "Left key" },
+    meta: { icon: "key-command", iconTitle: "Command key" },
+    right: { icon: "arrow-right", iconTitle: "Right key" },
+    shift: { icon: "key-shift", iconTitle: "Shift key" },
+    up: { icon: "arrow-up", iconTitle: "Up key" },
 };
 
-export interface IKeyComboProps extends IProps {
+// eslint-disable-next-line deprecation/deprecation
+export type KeyComboTagProps = IKeyComboProps;
+/** @deprecated use KeyComboTagProps */
+export interface IKeyComboProps extends Props {
     /** The key combo to display, such as `"cmd + s"`. */
     combo: string;
 
@@ -43,13 +47,14 @@ export interface IKeyComboProps extends IProps {
      * Whether to render in a minimal style.
      * If `false`, each key in the combo will be rendered inside a `<kbd>` tag.
      * If `true`, only the icon or short name of a key will be rendered with no wrapper styles.
+     *
      * @default false
      */
     minimal?: boolean;
 }
 
 @polyfill
-export class KeyCombo extends AbstractPureComponent2<IKeyComboProps> {
+export class KeyCombo extends AbstractPureComponent2<KeyComboTagProps> {
     public static displayName = `${DISPLAYNAME_PREFIX}.KeyCombo`;
 
     public render() {
@@ -63,19 +68,16 @@ export class KeyCombo extends AbstractPureComponent2<IKeyComboProps> {
     private renderKey = (key: string, index: number) => {
         const icon = KeyIcons[key];
         const reactKey = `key-${index}`;
-        return icon == null ? (
-            <kbd className={Classes.KEY} key={reactKey}>
+        return (
+            <kbd className={classNames(Classes.KEY, { [Classes.MODIFIER_KEY]: icon != null })} key={reactKey}>
+                {icon != null && <Icon icon={icon.icon} title={icon.iconTitle} />}
                 {key}
-            </kbd>
-        ) : (
-            <kbd className={classNames(Classes.KEY, Classes.MODIFIER_KEY)} key={reactKey}>
-                <Icon icon={icon} /> {key}
             </kbd>
         );
     };
 
     private renderMinimalKey = (key: string, index: number) => {
         const icon = KeyIcons[key];
-        return icon == null ? key : <Icon icon={icon} key={`key-${index}`} />;
+        return icon == null ? key : <Icon icon={icon.icon} title={icon.iconTitle} key={`key-${index}`} />;
     };
 }

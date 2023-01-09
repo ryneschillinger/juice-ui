@@ -4,21 +4,26 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"; //Has
 import "normalize.css/normalize.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
 
-import "./@candy-ui/styles/setproduct.css";
-import "./@candy-ui/demo/styles/demo.css";
-import DemoAppStyle from "./@candy-ui/demo/styles/style.module.css";
+import "./@juice-ui/styles/juice.css";
+import "./@juice-ui/demo/styles/demo.css";
+import DemoAppStyle from "./@juice-ui/demo/styles/style.module.css";
 
 /**APP */
-import DemoAppBar from "./@candy-ui/demo/DemoAppBar.jsx";
-import LeftSideBar from "./@candy-ui/demo/LeftSidebar.jsx";
-import * as ROUTES from "./@candy-ui/demo/constants/Routes.jsx";
+import { Link } from "react-router-dom";
+import DemoAppBar from "./@juice-ui/demo/DemoAppBar.jsx";
+import Logo from "./@juice-ui/assets/juice-ui-logo.png";
+import Navbar from "./@juice-ui/core/Navbar";
+import NavbarGroup from "./@juice-ui/core/Navbar/Group.jsx";
+import NavbarHeading from "./@juice-ui/core/Navbar/Heading.jsx";
+import LeftSideBar from "./@juice-ui/demo/LeftSidebar.jsx";
+import * as ROUTES from "./@juice-ui/demo/constants/Routes.jsx";
 
-import { ThemeContext } from "./@candy-ui/core/ThemeContext";
-import { SidebarStateContext } from "./@candy-ui/demo/context/SidebarContext";
-import { SidebarContainer } from "./@candy-ui/demo/components/SidebarContainer";
-import { CustomScrollbar } from "./@candy-ui/demo/components/CustomScrollbar";
+import { ThemeContext } from "./@juice-ui/core/ThemeContext";
+import { SidebarStateContext } from "./@juice-ui/demo/context/SidebarContext";
+import { SidebarContainer } from "./@juice-ui/demo/components/SidebarContainer";
+import { CustomScrollbar } from "./@juice-ui/demo/components/CustomScrollbar";
 
-import { useDevice } from "./@candy-ui/demo/components/customHooks";
+import { useDevice } from "./@juice-ui/demo/components/customHooks";
 
 const App = () => {
   let device = useDevice();
@@ -26,6 +31,25 @@ const App = () => {
   const [isOpenSidebar, setOpenSidebar] = useState(
     useContext(SidebarStateContext)
   );
+  const getLogoSize = deviceType => {
+    if (deviceType === 'mobile') {
+        return '28px';
+    }
+    if (deviceType === 'tablet') {
+        return '34px';
+    }
+    return '40px';
+  }
+
+  const getNavBarSize = deviceType => {
+    if (deviceType === 'mobile') {
+        return '3rem';
+    }
+    if (deviceType === 'tablet') {
+        return '3.5rem';
+    }
+    return '4.5rem';
+  }
 
   return (
     <React.Fragment>
@@ -40,19 +64,50 @@ const App = () => {
           }}
         >
           <Router basename="/">
+            
             {/**CONTAINER */}
             <div className={DemoAppStyle.container}>
-
-              {/**HEADER */}
-              <div className={DemoAppStyle.header}>
-                <DemoAppBar device={device} />
-              </div>
-
-              {/**LEFT SIDEBAR */}
-
               <SidebarContainer left position="left">
                 <div className={DemoAppStyle.sidebar} id="left-sidebar">
-                  <CustomScrollbar left>
+                  <SidebarStateContext.Consumer>
+                    {({ leftSidebarState, rightSidebarState, setSidebarState }) => (
+                      <div onClick={() => setSidebarState({ left: false, right: false })}>
+                        <Navbar
+                          view="filled"
+                          color="primary"
+                          type={device}
+                          style={{
+                            backgroundColor: "var(--color80)",
+                            padding: "0 1.2rem"
+                          }}
+                        >
+                          <NavbarGroup align="left">
+                            <NavbarHeading>
+                              {/**SITE LOGO*/}
+                              <Link to={device === "desktop" ? "/docs/introduction" : "#"}>
+                                <img
+                                  src={Logo}
+                                  alt="JuiceUI"
+                                  className={DemoAppStyle.site_logo}
+                                  style={{ height: getLogoSize(device) }}
+                                  onClick={() =>
+                                    setSidebarState({
+                                      left: !leftSidebarState,
+                                      right: rightSidebarState
+                                    })
+                                  }
+                                />
+                              </Link>
+                            </NavbarHeading>
+                          </NavbarGroup>
+                        </Navbar>
+                      </div>
+                    )}
+                  </SidebarStateContext.Consumer>
+                  <CustomScrollbar
+                    style={{ height: `calc(100% - ${getNavBarSize(device)}`}}
+                    left
+                  >
                     <LeftSideBar />
                   </CustomScrollbar>
                 </div>
@@ -61,7 +116,9 @@ const App = () => {
               {/*CONTENT*/}
 
               <div className={DemoAppStyle.content}>
+                <DemoAppBar device={device} />
                 <CustomScrollbar
+                  style={{ height: `calc(100% - ${getNavBarSize(device)}`}}
                   hideTracksWhenNotNeeded
                 >
                   <Switch>
@@ -125,7 +182,7 @@ const App = () => {
                       path={ROUTES.SWITCH}
                       component={ROUTES.DEMO_SWITCH}
                     />
-                    <Route path={ROUTES.CHIPS} component={ROUTES.DEMO_CHIPS} />
+                    <Route path={ROUTES.CHIP} component={ROUTES.DEMO_CHIP} />
                     <Route path={ROUTES.TREE} component={ROUTES.DEMO_TREE} />
                     <Route
                       path={ROUTES.TOOLTIP}
@@ -191,10 +248,6 @@ const App = () => {
                     <Route
                       path={ROUTES.DIVIDER}
                       component={ROUTES.DEMO_DIVIDER}
-                    />
-                    <Route
-                      path={ROUTES.TABS_SEGMENTED}
-                      component={ROUTES.DEMO_TABS_SEGMENTED}
                     />
                     <Route
                       path={ROUTES.DIALOG}
