@@ -88,7 +88,7 @@ export default function SearchInput(props) {
           leftIcon={
             <Button
               icon={
-                <Icon icon={"search"} iconSize={type === "dense" ? 16 : 20} />
+                <Icon icon="search" iconSize={type === "dense" ? 16 : 20} />
               }
               minimal={true}
               className={View["searchButton"]}

@@ -7,9 +7,9 @@
   },
   "private": true,
   "dependencies": {
-    "@blueprintjs/core": "^4.10.2",
+    "@blueprintjs/core": "^3.54.0",
     "@blueprintjs/datetime": "^3.18.2",
-    "@blueprintjs/icons": "4.6.0",
+    "@blueprintjs/icons": "^4.11.0",
     "@blueprintjs/popover2": "^1.10.2",
     "@blueprintjs/select": "^3.18.2",
     "@carbon/icons-react": "^10.13.0",
