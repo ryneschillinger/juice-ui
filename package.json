@@ -7,7 +7,7 @@
   },
   "private": true,
   "dependencies": {
-    "@blueprintjs/core": "^4.13.0",
+    "@blueprintjs/core": "^4.1.0",
     "@blueprintjs/datetime": "^3.18.2",
     "@blueprintjs/icons": "^4.11.0",
     "@blueprintjs/popover2": "^1.10.2",
@@ -25,7 +25,7 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
