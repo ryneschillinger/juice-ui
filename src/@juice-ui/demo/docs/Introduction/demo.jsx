@@ -20,7 +20,7 @@ const DemoStart = props => {
 
   return (
     <div className={DemoAppStyle["content-container"]}>
-      <div style={{ width: "100%" }}>
+      <div sclassName={DemoAppStyle["content-component-full-width"]}>
         <Typo type="h2" color="primary" colorStep={80} style={{ margin: "0.8rem 0 0.2rem 0" }}>
           Juice UI Kit
         </Typo>
@@ -63,7 +63,7 @@ const DemoStart = props => {
             className={styles.text_command}
             style={{ color: "var(--blue90)", background: "var(--blue5)" }}
           >
-            smooth
+            outlined
           </span>, 
           <span
             className={styles.text_command}
@@ -84,7 +84,7 @@ const DemoStart = props => {
         <div className={styles.promo_group}>
           <div className={styles.promo_item}>
             <Card
-              view="smooth"
+              view="outlined"
               color="success"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
@@ -97,7 +97,7 @@ const DemoStart = props => {
           </div>
           <div className={styles.promo_item}>
             <Card
-              view="smooth"
+              view="outlined"
               color="danger"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
@@ -110,7 +110,7 @@ const DemoStart = props => {
           </div>
           <div className={styles.promo_item}>
             <Card
-              view="smooth"
+              view="outlined"
               color="primary"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
@@ -123,7 +123,7 @@ const DemoStart = props => {
           </div>
           <div className={styles.promo_item}>
             <Card
-              view="smooth"
+              view="outlined"
               color="warning"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
