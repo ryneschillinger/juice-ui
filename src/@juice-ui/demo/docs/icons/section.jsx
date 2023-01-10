@@ -2,7 +2,7 @@ import React from "react";
 import cx from "classnames";
 import Typo from "../../../core/Typography";
 import { Icon } from "@blueprintjs/core";
-import IconJson from "@blueprintjs/icons/icons.json";
+import IconJson from "./icons.json";
 import Toaster from "../../../core/Toast/Toaster.jsx";
 
 import styles from "./style.module.css";
