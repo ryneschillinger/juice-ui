@@ -20,7 +20,7 @@ const DemoStart = props => {
 
   return (
     <div className={DemoAppStyle["content-container"]}>
-      <div sclassName={DemoAppStyle["content-component-full-width"]}>
+      <div className={DemoAppStyle["content-component-full-width"]}>
         <Typo type="h2" color="primary" colorStep={80} style={{ margin: "0.8rem 0 0.2rem 0" }}>
           Juice UI Kit
         </Typo>
