@@ -1,4 +1,4 @@
-![This is an image](https://github.com/ryneschillinger/juice-ui/blob/master/src/%40juice-ui/assets/juicy-ui-logo-dark.png)
+![This is an image](https://github.com/ryneschillinger/juice-ui/blob/master/src/%40juice-ui/assets/juice-ui-cover.png)
 
 # Introduction
 
