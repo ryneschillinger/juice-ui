@@ -135,3 +135,4 @@ export const PATTERNS_RADIO = "/patterns/radio";
 // OTHER
 export const FIGMA_DEMO_LINK =
   "https://www.figma.com/file/4UyBcwhG5eXHDbxrbF7CRm/Juice-UI-Kit?node-id=3737%3A47";
+export const GITHUB_LINK = "https://github.com/ryneschillinger/juice-ui"

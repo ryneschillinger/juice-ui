@@ -131,7 +131,7 @@ const AppBar = props => {
                   /> */}
                   <SiteSearch device={device} />
                   <a
-                    href={ROUTES.FIGMA_DEMO_LINK}
+                    href={ROUTES.GITHUB_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ marginLeft: "0.5rem" }}
