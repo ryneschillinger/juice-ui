@@ -47,6 +47,7 @@ const DemoIcons = props => {
   const [query, setQuery] = useState();
   const [selectedIconGroup, setSelectedIconGroup] = React.useState(items[0]);
   const onSearch = val => {
+    console.log(val)
     setQuery(val);
   };
 

@@ -129,8 +129,6 @@ export default function Select(props) {
     return text.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
   }
 
-  console.log(filterable)
-
   return (
     <ThemeContext.Consumer>
       {({ isDark }) => (

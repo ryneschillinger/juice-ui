@@ -37,31 +37,26 @@ export const Section = props => {
   const groupIcons = group => {
     let items = Object(IconJson)
       .filter(name => name.group === group)
-      .sort();
-    let icons_name = items.map(item => item.iconName).sort();
-    let icons_display_name = items.map(item => item.displayName).sort();
-    let icons_tags = items.map(item => item.tags).sort();
-
+      .sort((a, b) => a.displayName.toLowerCase() > b.displayName.toLowerCase() ? 1 : -1);
     return (
       <>
-        {icons_name
+        {items
           .map((item, i) => (
             <div
               className={cx(styles.icon_item, props.className)}
               key={i}
-              onClick={() => copyToClipboard(props.iconExample.replace(/<[^>]+>/g, '').replace('add', icons_name[i]))}
+              onClick={() => copyToClipboard(props.iconExample.replace(/<[^>]+>/g, '').replace('add', items[i].iconName))}
             >
               <div className={styles.icon_item_container}>
                 <div className={styles.icon_svg}>
-                  <Icon icon={item} iconSize={props.iconSize} />
+                  <Icon icon={item.iconName} iconSize={props.iconSize} />
                 </div>
 
                 <Typo
                   large
                   colorStep={40}
-                  data-name={icons_display_name[i]}
+                  data-name={items[i].displayName}
                   className={styles.icon_name}
-                  tags={icons_tags[i]}
                 />
               </div>
             </div>
@@ -69,7 +64,8 @@ export const Section = props => {
           .filter((item, i) =>
             !props.searchQuery
             || props.searchQuery === ""
-            || icons_name[i].includes(props.searchQuery)
+            || items[i].displayName.toLowerCase().includes(props.searchQuery)
+            || items[i].tags.includes(props.searchQuery)
           )
           .sort()}
       </>

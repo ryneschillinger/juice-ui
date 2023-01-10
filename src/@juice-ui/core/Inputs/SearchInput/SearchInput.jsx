@@ -54,7 +54,7 @@ export default function SearchInput(props) {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      isVal && isVal.length > 0 && onSearch(isVal)
+      onSearch(isVal)
     }, 500);
     return () => clearTimeout(timer);
   }, [isVal]);

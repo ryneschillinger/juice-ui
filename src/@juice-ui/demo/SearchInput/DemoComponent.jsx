@@ -18,7 +18,7 @@ export const DEMO = props => {
       message: `Sorry, we can't find anything about "${val}".`,
       icon: <Icon icon="error" iconSize={24} />
     };
-    isRef.show(DemoToast);
+    val && val !== "" && isRef.show(DemoToast);
   };
 
   return (
