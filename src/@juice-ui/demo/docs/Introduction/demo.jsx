@@ -63,7 +63,7 @@ const DemoStart = props => {
             className={styles.text_command}
             style={{ color: "var(--blue90)", background: "var(--blue5)" }}
           >
-            outlined
+            smooth
           </span>, 
           <span
             className={styles.text_command}
@@ -84,7 +84,7 @@ const DemoStart = props => {
         <div className={styles.promo_group}>
           <div className={styles.promo_item}>
             <Card
-              view="outlined"
+              view="flat"
               color="success"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
@@ -97,7 +97,7 @@ const DemoStart = props => {
           </div>
           <div className={styles.promo_item}>
             <Card
-              view="outlined"
+              view="flat"
               color="danger"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
@@ -110,7 +110,7 @@ const DemoStart = props => {
           </div>
           <div className={styles.promo_item}>
             <Card
-              view="outlined"
+              view="flat"
               color="primary"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
@@ -123,7 +123,7 @@ const DemoStart = props => {
           </div>
           <div className={styles.promo_item}>
             <Card
-              view="outlined"
+              view="flat"
               color="warning"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
