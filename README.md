@@ -1,3 +1,5 @@
+![This is an image](https://github.com/ryneschillinger/juice-ui/blob/master/src/%40juice-ui/assets/juicy-ui-logo-dark.png)
+
 # Introduction
 
 Juice is unlike any other React UI kit. It takes the [BlueprintJS Library](https://blueprintjs.com/) and [Figma design assets]([https://blueprintjs.com/](https://www.figma.com/file/4UyBcwhG5eXHDbxrbF7CRm/Juice-UI-Kit?node-id=3737%3A47)) and blends them together into a refreshing UI library that helps you build and scale a variety of tasty apps faster than ever before.
