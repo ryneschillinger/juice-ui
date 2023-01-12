@@ -46,38 +46,38 @@ const DemoStart = props => {
            and blends them together into a refreshing UI library that helps you build and scale a variety of tasty apps faster than ever before.
         </Typo>
         <Typo large className={styles.text}>
-          The library provides 
+          <span>The library provides </span>
           <span
             className={styles.text_command}
             style={{ color: "var(--green90)", background: "var(--green5)" }}
           >
             flat
-          </span>, 
+          </span><span>, </span>
           <span
             className={styles.text_command}
             style={{ color: "var(--red90)", background: "var(--red5)" }}
           >
             filled
-          </span>, 
+          </span><span>, </span>
           <span
             className={styles.text_command}
             style={{ color: "var(--blue90)", background: "var(--blue5)" }}
           >
             smooth
-          </span>, 
+          </span><span>, </span>
           <span
             className={styles.text_command}
             style={{ color: "var(--yellow90)", background: "var(--yellow5)" }}
           >
             outlined
-          </span>, and 
+          </span><span>, and </span>
           <span
             className={styles.text_command}
             style={{ color: "var(--purple90)", background: "var(--purple5)" }}
           >
             raised
-          </span> instances for every component, UI widget or template.
-          Want to go simple and data-first for enterprise applications? Try the flat style. Are you a fan of Material UI? The raised style might be the flavor for you. You can even mix-and-match if you'd like! Whatever you're in the mood for, Juice has you covered by making it easier than ever to swap between React and Figma on the fly.
+          </span> <span>instances for every component, UI widget or template.
+          Want to go simple and data-first for enterprise applications? Try the flat style. Are you a fan of Material UI? The raised style might be the flavor for you. You can even mix-and-match if you'd like! Whatever you're in the mood for, Juice has you covered by making it easier than ever to swap between React and Figma on the fly.</span>
         </Typo>
         
         {/* Promo images */}

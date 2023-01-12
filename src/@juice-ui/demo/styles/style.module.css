@@ -15,9 +15,13 @@ body {
     "sidebar content props";
   grid-template-columns: 1fr;
 }
-
 .header {
   grid-area: header;
+}
+.site_navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 .sidebar {
   grid-area: sidebar;
@@ -44,7 +48,7 @@ body {
 .content-component,
 .content-component-full-width {
   display: grid;
-  padding: 2rem 2rem 5rem 2rem;
+  padding: 4.5rem 2rem 5rem 2rem;
 }
 .content-section {
   margin: 0 0 1.5rem 0;
@@ -116,6 +120,11 @@ div[role="tablist"][class*="tab-list"] {
     grid-template-columns: 1fr;
     width: 100%;
   }
+  .site_navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
   .right_sidebar {
     /*display: grid;*/
     width: 180px;
@@ -129,6 +138,11 @@ div[role="tablist"][class*="tab-list"] {
     background-color: var(--white);
     box-shadow: var(--shadow2dp);
     margin-right: 1rem;
+  }
+  .content-component,
+  .content-component-full-width {
+    display: grid;
+    padding: 5rem 2rem 5rem 2rem;
   }
   .content-component {
     display: grid;
@@ -157,6 +171,9 @@ div[role="tablist"][class*="tab-list"] {
       "sidebar content props";
     grid-template-columns: 300px 5fr 0;
   }
+  .site_navbar {
+    position: relative;
+  }
   .sidebar {
     grid-area: sidebar;
     display: block;
@@ -176,6 +193,11 @@ div[role="tablist"][class*="tab-list"] {
     background-color: var(--white);
     box-shadow: var(--shadow2dp);
     margin-right: 1rem;
+  }
+  .content-component,
+  .content-component-full-width {
+    display: grid;
+    padding: 2rem 2rem 5rem 2rem;
   }
   .content-component {
     display: grid;

@@ -65,6 +65,7 @@ const AppBar = props => {
                 type={device}
                 view="filled"
                 color="primary"
+                className={DemoAppStyle.site_navbar}
               >
                 <NavbarGroup align="left">
                   <NavbarHeading>
