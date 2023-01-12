@@ -88,48 +88,9 @@ const AppBar = props => {
                       />
                     }
                   </NavbarHeading>
-                  {/**NAV BUTTONS*/}
-                  {/* <Link to={device === "desktop" ? "/docs/getting-started" : "#"}>
-                    <CustomButton
-                      view="flat"
-                      color="primary"
-                      text="Getting Started"
-                      device={device}
-                      active={location.pathname.match("getting-started") && true}
-                      dense={device === "mobile" && true}
-                    />
-                  </Link> */}
-                  {/* <Link to={device === "desktop" ? "/docs/usage" : "#"}>
-                    <CustomButton
-                      view="flat"
-                      color="primary"
-                      text="Usage"
-                      device={device}
-                      active={location.pathname.match("usage") && true}
-                      dense={device === "mobile" && true}
-                    />
-                  </Link>
-                  <Link to={device === "desktop" ? "/docs/principles" : "#"}>
-                    <CustomButton
-                      view="flat"
-                      color="primary"
-                      text="Principles"
-                      device={device}
-                      active={location.pathname.match("principles") && true}
-                      dense={device === "mobile" && true}
-                    />
-                  </Link> */}
                 </NavbarGroup>
                 {/**ACTIONS*/}
                 <NavbarGroup align="right" >
-                  {/* <SearchInput
-                    type={device === 'mobile' ? 'dense' : 'def'}
-                    view="smooth" 
-                    color="primary"
-                    placeholder="Search guidelines..."
-                    fill={device === 'mobile'}
-                    onSearch={e => console.log(e)}
-                  /> */}
                   <SiteSearch device={device} />
                   <a
                     href={ROUTES.GITHUB_LINK}
