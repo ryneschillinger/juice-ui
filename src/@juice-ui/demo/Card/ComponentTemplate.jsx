@@ -22,13 +22,13 @@ const Props = {
   desc: "A card is a bounded unit of UI content with a solid background color.",
   /**default value*/
   type: "def",
-  view: "flat",
+  view: "raised",
   color: "primary",
   elevation: 1
 };
 /**Available variants of VIEWS (variables)*/
 const views = [
-  ["Flat", "flat"],
+  ["Raised", "raised"],
   ["Filled", "filled"],
   ["Smooth", "smooth"],
   ["Outlined", "outlined"]

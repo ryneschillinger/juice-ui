@@ -9,6 +9,7 @@ import Img01 from "./01_action_green_800.gif";
 import Img02 from "./02_red_segment_800.gif";
 import Img03 from "./03_raised_btn_800.gif";
 import Img04 from "./04_menu_800.gif";
+import { useDevice } from "../../components/customHooks";
 
 const DemoStart = props => {
   React.useEffect(() => {
@@ -17,12 +18,13 @@ const DemoStart = props => {
       "description"
     ].content = `Ready-to-use React JS componentsfor save your time.`;
   });
+  let device = useDevice();
 
   return (
     <div className={DemoAppStyle["content-container"]}>
       <div className={DemoAppStyle["content-component-full-width"]}>
-        <Typo type="h2" color="primary" colorStep={80} style={{ margin: "0.8rem 0 0.2rem 0" }}>
-          Juice UI Kit
+        <Typo type={device !== "mobile" ? "h2" : "h3"} color="primary" colorStep={80} style={{ margin: "0.8rem 0 0.2rem 0" }}>
+          {device !== "desktop" && "🧃 "}Juice UI Kit
         </Typo>
         <Typo large className={styles.text} style={{ marginBottom: "1rem" }}>
           Juice is unlike any other React UI kit. It takes the
@@ -84,7 +86,7 @@ const DemoStart = props => {
         <div className={styles.promo_group}>
           <div className={styles.promo_item}>
             <Card
-              view="flat"
+              view="raised"
               color="success"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
@@ -97,7 +99,7 @@ const DemoStart = props => {
           </div>
           <div className={styles.promo_item}>
             <Card
-              view="flat"
+              view="raised"
               color="danger"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
@@ -110,7 +112,7 @@ const DemoStart = props => {
           </div>
           <div className={styles.promo_item}>
             <Card
-              view="flat"
+              view="raised"
               color="primary"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
@@ -123,7 +125,7 @@ const DemoStart = props => {
           </div>
           <div className={styles.promo_item}>
             <Card
-              view="flat"
+              view="raised"
               color="warning"
               elevation={2}
               style={{ blockSize: "fit-content", overflow: "hidden" }}
