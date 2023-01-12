@@ -46,7 +46,7 @@ const DemoStart = props => {
            and blends them together into a refreshing UI library that helps you build and scale a variety of tasty apps faster than ever before.
         </Typo>
         <Typo large className={styles.text}>
-          The library provides
+          The library provides 
           <span
             className={styles.text_command}
             style={{ color: "var(--green90)", background: "var(--green5)" }}
