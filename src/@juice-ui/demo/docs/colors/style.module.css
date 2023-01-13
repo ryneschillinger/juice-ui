@@ -30,8 +30,8 @@
 .color_accessibility {
   display: initial;
   text-transform: uppercase;
-  margin-left: 1.25rem;
-  width: 3rem;
+  margin-left: 1.5rem;
+  width: 3.5rem;
 }
 .color_item {
   display: flex;
