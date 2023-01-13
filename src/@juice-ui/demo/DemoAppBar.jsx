@@ -118,7 +118,7 @@ const AppBar = props => {
                     href={ROUTES.FIGMA_DEMO_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ marginLeft: "0.5rem" }}
+                    style={{ marginLeft: 0 }}
                   >
                     <Button
                       dense={device === "mobile" && true}
