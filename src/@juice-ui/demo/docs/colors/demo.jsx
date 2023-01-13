@@ -46,8 +46,7 @@ const DemoColors = props => {
           <div className={styles.colors_array}>
             <Palette alias="warning" color="yellow" name="🍌 Banana" />
           </div>
-          <div className={styles.space_between} />
-          <div className={cx(styles.colors_array, styles.full_space)}>
+          <div className={styles.colors_array}>
             <Palette alias="danger" color="red" name="🍒 Cherry" />
           </div>
         </div>
@@ -56,7 +55,7 @@ const DemoColors = props => {
           Alternative Colors
         </Typo>
         <Typo large className={styles.text}>
-          You can replace or mix any of Action Colors with one of these alternatives.s
+          You can replace the primary and/or any of the Action Colors with one of these alternatives.
         </Typo>
         <div className={styles.alt_colors}>
           <div className={styles.colors_array}>
@@ -66,7 +65,6 @@ const DemoColors = props => {
           <div className={styles.colors_array}>
             <Palette alias="success_alt" color="teal" name="🌿 Mint" />
           </div>
-          <div className={styles.space_between} />
           <div className={styles.colors_array}>
             <Palette alias="warning_alt" color="orange" name="🍊 Tangerine" />
           </div>

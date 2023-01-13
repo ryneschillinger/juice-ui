@@ -30,6 +30,37 @@ export const Palette = ({ color = "grey", name = "charcoal", alias = "default", 
     textField.remove();
   };
 
+  const getAccessibilityResult = colorStep => {
+    switch (true) {
+      case (colorStep <= 20):
+        return "✅ AAA";
+        break;
+      case (colorStep <= 40):
+        return "👍 AA";
+        break;
+      case (colorStep === 60 && (color === "grey" || color === "purple")):
+        return "👍 AA";
+        break;
+      case (colorStep <= 60):
+        return "🚫 FAIL";
+        break;
+      case (colorStep <= 70 && color === "yellow"):
+        return "🚫 FAIL";
+        break;
+      case (colorStep <= 70):
+        return "👍 AA";
+        break;
+      case (colorStep === 80 && color == "yellow"):
+        return "👍 AA";
+        break;
+      case (colorStep <= 100):
+        return "✅ AAA";
+        break;
+      default:
+        return "🚫 FAIL";
+    }
+  }
+
   return (
     <>
       <section>
@@ -73,7 +104,7 @@ export const Palette = ({ color = "grey", name = "charcoal", alias = "default", 
                 color={alias}
                 className={styles.color_accessibility}
               >
-                AAA
+                {getAccessibilityResult(color_step)}
               </Typo>
             </div>
           </div>
