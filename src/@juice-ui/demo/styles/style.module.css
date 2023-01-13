@@ -45,6 +45,9 @@ body {
   display: block;
   height: calc(100vh);
 }
+.main_content_container {
+  margin-top: 3rem;
+}
 .content-component,
 .content-component-full-width {
   display: grid;
@@ -143,7 +146,7 @@ div[role="tablist"][class*="tab-list"] {
   .content-component,
   .content-component-full-width {
     display: grid;
-    padding: 5rem 2rem 5rem 2rem;
+    padding: 2rem 2rem 5rem 2rem;
   }
   .content-component {
     display: grid;
@@ -158,6 +161,9 @@ div[role="tablist"][class*="tab-list"] {
     padding: 0;
     display: block;
     height: calc(100vh);
+  }
+  .main_content_container {
+    margin-top: 3.5rem;
   }
   .props_button {
     display: none;
@@ -218,6 +224,9 @@ div[role="tablist"][class*="tab-list"] {
     height: calc(100vh);
     padding: 0;
   }
+  .main_content_container {
+    margin-top: 0;
+  }
   .nowrap {
     white-space: initial;
   }
@@ -258,6 +267,9 @@ div[role="tablist"][class*="tab-list"] {
     width: calc(100% - 200px);
     margin: 0 auto;
     padding: 1rem 2rem 5rem 1rem;
+  }
+  .main_content_container {
+    margin-top: 0;
   }
   .content-component-full-width {
     width: 100%;

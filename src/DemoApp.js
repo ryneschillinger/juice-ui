@@ -119,6 +119,7 @@ const App = () => {
                 <DemoAppBar device={device} />
                 <CustomScrollbar
                   style={{ height: `calc(100% - ${getNavBarSize(device)}`}}
+                  className={DemoAppStyle.main_content_container}
                   hideTracksWhenNotNeeded
                 >
                   <Switch>
