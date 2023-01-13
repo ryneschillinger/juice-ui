@@ -445,7 +445,7 @@ div[class*="-pag"].dense div > button svg {
 .flat-pag button:disabled > span > svg,
 .flat-pag button:disabled:hover,
 .flat-pag button:disabled:active {
-  color: var(--color30) !important;
+  color: var(--color50) !important;
   opacity: 1 !important;
 }
 /*Filled*/
@@ -461,21 +461,21 @@ div[class*="-pag"].dense div > button svg {
 }
 .filled-pag svg,
 .filled-pag div > div:nth-of-type(2) > div {
-  color: var(--color80) !important;
+  color: var(--color30) !important;
 }
 .filled-pag button:hover,
 .filled-pag div > div:nth-of-type(2) > div:hover {
-  background: var(--color30);
+  background: var(--color90);
   box-shadow: var(--shadow8dp);
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .filled-pag button:disabled {
-  background-color: var(--color40) !important;
+  background-color: var(--color70) !important;
 }
 .filled-pag button:disabled > span > svg,
 .filled-pag button:disabled:hover,
 .filled-pag button:disabled:active {
-  color: var(--color20) !important;
+  color: var(--color40) !important;
   box-shadow: none;
   opacity: 1;
 }

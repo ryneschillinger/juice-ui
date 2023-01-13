@@ -50,7 +50,7 @@ div[class*="DayPicker-Day--hovered-range"]:not([class*="DayPicker-Day--selected"
   border: none !important;
 }
 .flat div[class*="DayPicker-Day"] > div[class*="day-wrapper"]:hover {
-  background: var(--color60) !important;
+  background: var(--color70) !important;
   color: var(--color0);
 }
 .flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range"],
@@ -62,7 +62,7 @@ div[class*="DayPicker-Day--hovered-range"]:not([class*="DayPicker-Day--selected"
 .flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"]:hover,
 .flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"],
 .flat div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"]:hover  {
-  background: var(--color60) !important;
+  background: var(--color70) !important;
   color: var(--color0);
 }
 
@@ -146,7 +146,7 @@ div[class*="DayPicker-Day--hovered-range"]:not([class*="DayPicker-Day--selected"
   border: none !important;
 }
 .smooth div[class*="DayPicker-Day"] > div[class*="day-wrapper"]:hover {
-  background: var(--color60) !important;
+  background: var(--color70) !important;
   color: var(--color0);
 }
 .smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range"],
@@ -158,7 +158,7 @@ div[class*="DayPicker-Day--hovered-range"]:not([class*="DayPicker-Day--selected"
 .smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-start"]:hover,
 .smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"],
 .smooth div[class*="DayPicker-Day"][class*="DayPicker-Day--selected-range-end"]:hover  {
-  background: var(--color60) !important;
+  background: var(--color70) !important;
   color: var(--color0);
 }
 

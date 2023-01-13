@@ -420,7 +420,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -437,8 +437,10 @@ export const Data2 = [
     date: "07/03/1990",
     status: (
       <Chip
-        mdc_style={["dense", "outlined", "danger"]}
+        type="dense"
         tag="LOSS"
+        view="filled"
+        color="danger"
         round={false}
         //style={{ height: "20px" }}
       />
@@ -454,7 +456,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -472,7 +474,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -490,7 +492,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -508,9 +510,9 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="outlined"
-        color="danger"
         tag="LOSS"
+        view="filled"
+        color="danger"
         round={false}
         //style={{ height: "20px" }}
       />
@@ -526,7 +528,8 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="outlined"
+        view="filled"
+        color="default"
         tag="STOPPED"
         round={false}
         //style={{ height: "20px" }}
@@ -543,7 +546,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="outlined"
+        view="filled"
         color="warning"
         tag="WARN"
         round={false}
@@ -561,7 +564,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -579,7 +582,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="outlined"
+        view="filled"
         color="danger"
         tag="LOSS"
         round={false}
@@ -597,7 +600,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -614,8 +617,10 @@ export const Data2 = [
     date: "07/03/1990",
     status: (
       <Chip
-        mdc_style={["dense", "outlined", "danger"]}
+        type="dense"
         tag="LOSS"
+        view="filled"
+        color="danger"
         round={false}
         //style={{ height: "20px" }}
       />
@@ -631,7 +636,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -649,7 +654,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -667,7 +672,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -685,7 +690,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="outlined"
+        view="filled"
         color="danger"
         tag="LOSS"
         round={false}
@@ -703,8 +708,9 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="outlined"
-        tag="STOPPED"
+        tag="LOSS"
+        view="filled"
+        color="default"
         round={false}
         //style={{ height: "20px" }}
       />
@@ -720,7 +726,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="outlined"
+        view="filled"
         color="warning"
         tag="WARN"
         round={false}
@@ -738,7 +744,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -756,9 +762,9 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="outlined"
-        color="danger"
         tag="LOSS"
+        view="filled"
+        color="danger"
         round={false}
         //style={{ height: "20px" }}
       />
@@ -774,7 +780,7 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="smooth"
+        view="filled"
         color="success"
         tag="OK"
         round={false}
@@ -792,9 +798,9 @@ export const Data2 = [
     status: (
       <Chip
         type="dense"
-        view="outlined"
-        color="danger"
         tag="LOSS"
+        view="filled"
+        color="danger"
         round={false}
         //style={{ height: "20px" }}
       />

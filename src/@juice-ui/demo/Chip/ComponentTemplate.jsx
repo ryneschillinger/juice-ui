@@ -29,7 +29,7 @@ const Props = {
 };
 /**Available variants of TYPES & VIEWS (variables)*/
 const shapes = [["Default", "def"], ["Dense", "dense"]];
-const views = [["Smooth", "smooth"], ["Outlined", "outlined"]];
+const views = [["Smooth", "smooth"], ["Outlined", "outlined"], ["Filled", "filled"]];
 
 /**END OF SETTINGS*/
 

@@ -3,7 +3,7 @@
 /*SMOOTH STYLE*/
 .smooth[class*="tag"],
 .smooth[class*="tag"]:visited {
-  color: var(--color70);
+  color: var(--color80);
   background-color: var(--color5);
   transition: all 180ms ease-in;
 }
@@ -13,7 +13,7 @@
   transition: all 200ms ease-in;
 }
 .smooth[class*="tag"] svg {
-  color: var(--color60);
+  color: var(--color70);
 }
 .smooth[class*="tag"] button[class*="tag-remove"] {
   opacity: 1;
@@ -161,3 +161,73 @@
   color: var(--color70);
   background: none;
 }
+
+/*FILLED STYLE*/
+.filled[class*="tag"],
+.filled[class*="tag"]:visited {
+  color: var(--white);
+  background-color: var(--color70);
+  transition: all 180ms ease-in;
+}
+.filled[class*="tag"]:hover {
+  box-shadow: var(--shadow2dp);
+  background-color: var(--color80);
+  transition: all 200ms ease-in;
+}
+.filled[class*="tag"] svg {
+  color: var(--color20);
+}
+.filled[class*="tag"] button[class*="tag-remove"] {
+  opacity: 1;
+}
+.filled[class*="tag"]
+  button[class*="tag-remove"]
+  > span[class*="small-cross"]
+  > svg {
+  color: var(--color30);
+}
+.filled[class*="tag"]
+  button[class*="tag-remove"]:hover
+  > span[class*="small-cross"]
+  > svg {
+  color: var(--color40);
+  opacity: 1;
+  transition: all 180ms ease-in;
+}
+.filled[class*="tag"].active {
+  color: var(--color0);
+  background-color: var(--color90);
+  transition: all 180ms ease-in;
+}
+.filled[class*="tag"].active svg,
+.filled[class*="tag"].active svg:hover {
+  background-color: transparent;
+  color: var(--color30);
+}
+
+.filled[class*="tag"].disabled,
+.filled[class*="tag"].disabled svg,
+.filled[class*="tag"].disabled.active,
+.filled[class*="tag"].disabled.active svg,
+.filled[class*="tag"].disabled:hover,
+.filled[class*="tag"].disabled
+  button[class*="tag-remove"]:hover
+  > span[class*="small-cross"]
+  > svg,
+.filled[class*="tag"].disabled
+  button[class*="tag-remove"]
+  > span[class*="small-cross"]
+  > svg,
+.filled[class*="tag"].disabled
+  button[class*="tag-remove"]:hover
+  > span[class*="small-cross"]
+  > svg,
+.filled[class*="tag"].disabled button[class*="tag-remove"],
+.filled[class*="tag"].disabled button[class*="tag-remove"]:hover {
+  background-color: var(--color5);
+  color: var(--color40);
+  box-shadow: none;
+  cursor: no-drop;
+}
+
+/* END STYLE */

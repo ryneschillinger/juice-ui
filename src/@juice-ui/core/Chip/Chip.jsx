@@ -91,7 +91,7 @@ Chip.propTypes = {
    * Variants: `outlined`
    * Default value (if undefined): `smooth` `
    */
-  view: PropTypes.oneOf(["smooth", "outlined"]),
+  view: PropTypes.oneOf(["smooth", "outlined", "filled"]),
   /**
   ` The color of the component.
    * Variants: `primary` `warning` `danger` `success` `primaryAlt` `warningAlt` `dangerAlt` `successAlt`

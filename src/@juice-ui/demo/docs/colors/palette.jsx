@@ -56,17 +56,26 @@ export const Palette = ({ color = "grey", name = "charcoal", alias = "default", 
               className={styles.color_name}
               data-color={name + " " + color_step}
             />
-
-            <Typo
-              type="overline"
-              colorStep={color_step < 50 ? 90 : 0}
-              color={alias}
-              className={styles.color_hex}
-            >
-              {window
-                .getComputedStyle(document.getElementById("root"), null)
-                .getPropertyValue("--" + color + color_step)}
-            </Typo>
+            <div className={styles.color_details}>
+              <Typo
+                type="overline"
+                colorStep={color_step < 50 ? 90 : 0}
+                color={alias}
+                className={styles.color_hex}
+              >
+                {window
+                  .getComputedStyle(document.getElementById("root"), null)
+                  .getPropertyValue("--" + color + color_step)}
+              </Typo>
+              <Typo
+                type="overline"
+                colorStep={color_step < 50 ? 90 : 0}
+                color={alias}
+                className={styles.color_accessibility}
+              >
+                AAA
+              </Typo>
+            </div>
           </div>
         ))}
       </section>

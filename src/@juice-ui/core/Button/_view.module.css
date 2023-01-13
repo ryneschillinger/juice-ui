@@ -2,7 +2,7 @@
 .flat,
 .flat[class*="button"],
 .flat:visited {
-  color: var(--color70);
+  color: var(--color80);
   background: none;
   box-shadow: none;
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
@@ -39,13 +39,13 @@
 .filled[class*="button"],
 .filled[class*="button"]:visited {
   box-shadow: var(--shadow4dp);
-  background: var(--color60);
+  background: var(--color70);
   color: var(--color0);
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 .filled[class*="button"]:hover {
   cursor: pointer;
-  background: var(--color70);
+  background: var(--color80);
   box-shadow: var(--shadow8dp);
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -100,7 +100,7 @@
 .outlined[class*="button"]:visited {
   background: none;
   box-shadow: 0 0 0 1px var(--color30); /*border: 1px solid var(--color30);*/
-  color: var(--color70);
+  color: var(--color80);
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 .outlined[class*="button"]:hover {
@@ -128,7 +128,7 @@
 .raised[class*="button"],
 .raised[class*="button"]:visited {
   background: var(--color0);
-  color: var(--color70);
+  color: var(--color80);
   box-shadow: var(--shadow4dp);
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
@@ -143,7 +143,7 @@
 .raised[class*="button"].focused {
   box-shadow: var(--shadow2dp);
   background-color: var(--white);
-  color: var(--color70);
+  color: var(--color80);
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .raised[class*="disabled"]:disabled,

@@ -38,12 +38,12 @@
 .filled,
 .filled:visited {
   box-shadow: var(--shadow2dp) !important;
-  background: var(--color60) !important;
+  background: var(--color70) !important;
   color: var(--color0) !important;
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 .filled:hover {
-  background: var(--color70) !important;
+  background: var(--color80) !important;
   box-shadow: var(--shadow8dp) !important;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -64,7 +64,7 @@
 /*SMOOTH STYLE*/
 .smooth[class*="button"],
 .smooth[class*="button"]:visited {
-  color: var(--color70);
+  color: var(--color80);
   background: var(--color5);
   box-shadow: none;
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);

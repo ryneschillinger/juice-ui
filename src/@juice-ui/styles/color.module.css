@@ -44,6 +44,7 @@
   --filled-def-border2-table: var(--color10);
   --filled-def-head-table-sort: var(--color60);
   --filled-def-color-checkbox: var(--color20);
+  --filled-def-color-table-pag: var(--color20);
 
   --smooth-def-bg-head-table: var(--color10);
   --smooth-def-bg-table: var(--color0);
@@ -71,13 +72,13 @@
   --flat-color-table-pag: var(--color70);
   --flat-color-checkbox: var(--color70);
 
-  --filled-bg-table: var(--color40);
-  --filled-bg-table-hover: var(--color50);
+  --filled-bg-table: var(--color80);
+  --filled-bg-table-hover: var(--color90);
   --filled-bg-head-table: var(--color70);
-  --filled-border-table: var(--color30);
-  --filled-border2-table: var(--color10);
-  --filled-head-table-sort: var(--color60);
-  --filled-color-checkbox: var(--color20);
+  --filled-border-table: var(--color90);
+  --filled-border2-table: var(--color90);
+  --filled-head-table-sort: var(--color50);
+  --filled-color-checkbox: var(--color30);
 
   --smooth-bg-head-table: var(--color10);
   --smooth-bg-table: var(--color0);

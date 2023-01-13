@@ -59,6 +59,7 @@ const PropsGroup = props => {
           onChange={() => setBottom(!isBottom)}
           fill
           margin={margin}
+          style={{ lineHeight: 0.9 }}
         />
         <Checkbox
           type="dense"

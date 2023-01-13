@@ -45,8 +45,18 @@
 .colors_array.full_space {
   width: calc(200% + 0.5rem);
 }
+.color_details {
+  display: flex;
+  align-items: center;
+}
+.color_accessibility {
+  display: initial;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
 .color_item {
   display: flex;
+  justify-content: space-between;
   height: 4rem;
   line-height: 4rem;
   padding-left: 0.75rem;

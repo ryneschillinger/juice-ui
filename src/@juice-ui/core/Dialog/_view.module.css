@@ -23,13 +23,13 @@
 .filled > div[class*="header"] > span[class*="icon"] > svg,
 .raised > div[class*="header"] > span[class*="icon"] > svg,
 .smooth > div[class*="header"] > span[class*="icon"] > svg {
-  fill: var(--color40);
+  fill: var(--color60);
 }
 /*CLOSE_BUTTON*/
 .filled > div[class*="header"] div[class*="close-button"] svg,
 .raised > div[class*="header"] div[class*="close-button"] svg,
 .smooth > div[class*="header"] div[class*="close-button"] svg {
-  fill: var(--color40);
+  fill: var(--color70);
   transition: all 150ms ease-in-out;
 }
 

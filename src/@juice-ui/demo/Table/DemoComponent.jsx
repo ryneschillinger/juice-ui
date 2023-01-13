@@ -9,7 +9,7 @@ export const DEMO = props => {
   return (
     <Table
       name={Head}
-      data={type === "smooth" ? Data2 : Data}
+      data={view === ("filled" || "smooth") ? Data2 : Data}
       position={"left"}
       type={type}
       view={view}

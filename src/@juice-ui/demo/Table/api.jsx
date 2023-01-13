@@ -145,7 +145,7 @@ export const API = props => {
     <span class="attr">status</span>: (
       &lt;<span class="el">Chip</span>
         <span class="attr">type</span>="<span class="val">dense</span>"
-        <span class="attr">view</span>="<span class="val">smooth</span>"
+        <span class="attr">view</span>="<span class="val">${view === "filled" ? "filled" : "smooth"}</span>"
         <span class="attr">color</span>="<span class="val">success</span>"
         <span class="attr">tag</span>="<span class="val">OK</span>"
         <span class="attr">round</span>={<span class="bool">false</span>}

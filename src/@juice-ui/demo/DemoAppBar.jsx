@@ -75,7 +75,7 @@ const AppBar = props => {
                         type="default"
                         view="filled"
                         color="primary"
-                        size={device === "mobile" ? 16 : 24 }
+                        size={device === "mobile" ? 20 : 24 }
                         isOpen={false}
                         setOpen={() =>
                           setSidebarState({
@@ -106,7 +106,7 @@ const AppBar = props => {
                       icon={
                         <GitHubIcon
                           className={DemoAppStyle.github_icon}
-                          style={{ height: device === "mobile" ? "16px" : "20px" }}
+                          style={{ height: "20px" }}
                         />
                       }
                       text={device === "desktop" ? "GitHub Repo" : ""}
@@ -129,7 +129,7 @@ const AppBar = props => {
                         <img
                           src={FigmaIcon}
                           alt="Figma Demo"
-                          style={{ height: device === "mobile" ? "16px" : "20px" }}
+                          style={{ height: "20px" }}
                         />
                       }
                       text={device === "desktop" ? "Figma Preview" : ""}

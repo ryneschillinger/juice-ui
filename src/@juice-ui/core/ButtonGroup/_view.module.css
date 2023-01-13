@@ -31,7 +31,7 @@
 }
 
 .filled[class*="button-group"] > button[class*="button"] {
-  color: var(--color60);
+  color: var(--color70);
   background-color: inherit;
   box-shadow: none;
   margin-right: 0 !important;
@@ -43,7 +43,7 @@
   transition: background-color color 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 .filled > button[class*="button"][class*="focused"] {
-  background-color: var(--color60);
+  background-color: var(--color70);
   color: var(--white);
 }
 /*END STYLE*/
