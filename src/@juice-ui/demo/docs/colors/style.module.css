@@ -54,7 +54,7 @@ section > div:last-child {
   text-transform: capitalize;
   line-height: inherit;
   font-size: var(--font_size_body);
-  font-weight: var(--font_weight_body_semibold);
+  font-weight: var(--font_weight_body_regular);
 }
 .color_name:after {
   content: attr(data-color);
